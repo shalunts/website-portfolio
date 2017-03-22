@@ -33,7 +33,7 @@ body {
   font-size: 6em;
 }
 
-.screen:first-of-type::before {
+.screen:first-of-type::before, .screen:nth-child(3)::before {
   content: "";
   background-color: rgba(0,0,0,0.5);
 
@@ -74,7 +74,7 @@ body {
 // }
 
 .screen:nth-child(2) {
-  background: #fff url('') no-repeat center center fixed;
+  background: #fff url('../images/mountain_bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 .screen:nth-child(3) {
@@ -85,6 +85,7 @@ body {
 
 
 .what_i_do {
+  background-color: rgba(246,246,246, 0.8);
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -145,13 +146,13 @@ body {
 
     .card:hover:before {
 
-      background-color: rgb(231, 76, 60);
+      background-color: #BDC3C7;
       margin-top: -17px;
       top: 100%;
       right: 100%;
     }
     .card:hover:after {
-      background-color: rgb(231, 76, 60);
+      background-color: #BDC3C7;
       margin: -17px;
       right: 100%;
       bottom: 100%;
@@ -181,7 +182,7 @@ body {
           font-family: 'Oswald', sans-serif;
         }
       }
-      background: rgb(231, 76, 60);
+      background: #566573;
       border-radius: 3px;
     }
     .back {
