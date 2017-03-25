@@ -23,27 +23,31 @@
 
   <div class="container-fluid">
 
-    <div class="screen">
+    <section id="intro" class="screen">
       <div class="screen-content">
-        <p class="screen-caption">Hi, I'm Hayk!</p>
+        <p class="screen-caption">Hello, I'm Hayk!</p>
         <hr>
         <h1>Photographer + Web Developer</h1>
         <h5>I Build Awesome Web Apps</h5>
       </div>
-      <span id="arrow" class="fa fa-angle-down fa-3x"></span>
-    </div>
+      <div class="scroll-down">
+        <a href="#profile" class="scroll-down-icon">
+          <span class="fa fa-angle-down fa-3x"></span>
+        </a>
+      </div>
+    </section>
 
-
-
-    <div class="screen ">
-      <div class="what_i_do">
+    <section id="profile" >
+      <div class="profile">
         <h1>What i do..</h1>
 
-        <div class="what_i_do_content">
-          <div class="card">
+        <div class="row profile_content">
+
+          <div class="col-xs-12 col-md-4 card">
 
             <div class="faces front">
               <div class="card--name">
+                <i class="material-icons">settings_ethernet</i>
                 <p>Responsive Design</p>
               </div>
             </div>
@@ -54,10 +58,11 @@
             </div>
 
           </div>
-          <div class="card">
+          <div class="col-xs-12 col-md-4 card">
 
             <div class="faces front">
               <div class="card--name">
+                <i class="material-icons">dvr</i>
                 <p>Bootstrap</p>
               </div>
             </div>
@@ -68,10 +73,11 @@
             </div>
 
           </div>
-          <div class="card">
+          <div class="col-xs-12 col-md-4 card">
 
             <div class="faces front">
               <div class="card--name">
+                <i class="material-icons">format_shapes</i>
                 <p>Flexbox</p>
               </div>
             </div>
@@ -85,32 +91,39 @@
 
         </div>
       </div>
+    </section>
 
-
-    </div>
-
-
-
-
-
-    <div class="screen">
+    <section class="screen">
       <div class="screen-content">
         <div>
           <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
           <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolores aliquam optio, assumenda omnis, enim.</h6>
         </div>
       </div>
+    </section>
+
+  <section class="about">
+    <div class="about-content">
+      <div class="my-picture">
+        <img class="img-responsive" src="../images/me.svg" alt="My picture">
+      </div>
+      <div class="my-text">
+        <h1>This is me and I really love working with SVG.</h1>
+        <h4>Use the sliders to change the colors of my outfit the way you want it. Have fun!</h4>
+        <input type="range" min="0" max="100" value="1" step="1" onchange="colorCalculate(this.value)" style="width:400px;">
+        <span id="slideval">0%</span>
+      </div>
     </div>
-  </div>
-
-
+  </section>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script type="text/javascript" src="../js/home.js">
 
+  </script>
 </script>
 </body>
 
