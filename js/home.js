@@ -1,16 +1,5 @@
 (function($) {
 
-  /**
-   * Copyright 2012, Digital Fusion
-   * Licensed under the MIT license.
-   * http://teamdf.com/jquery-plugins/license/
-   *
-   * @author Sam Sehnert
-   * @desc A small plugin that checks whether elements are within
-   *     the user visible viewport of a web browser.
-   *     only accounts for vertical position, not horizontal.
-   */
-
   $.fn.visible = function(partial) {
 
       var $t            = $(this),
@@ -50,9 +39,15 @@ win.scroll(function(event) {
 
 });
 
+$(document).ready(function(){
 
-function colorCalculate(slider) {
-  var slideval = getElementById('slideval');
-  var pecnt = slider * .01;
-  slideval.innerHTML = prcnt.toFixed(2) + "%";
+
+function myFunction(){
+  var cl = document.getElementById('color').value;
+  var colval = document.getElementById('colval');
+  colval.innerHTML = cl;
+
+  document.getElementById('hair').setAttribute("style", "fill: brown;");
+
 }
+});
