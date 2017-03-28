@@ -39,15 +39,17 @@ win.scroll(function(event) {
 
 });
 
-$(document).ready(function(){
+var radioPicked = suit;
 
+function changeRadio(value){
+
+  radioPicked = document.getElementById(value);
+}
 
 function myFunction(){
   var cl = document.getElementById('color').value;
   var colval = document.getElementById('colval');
   colval.innerHTML = cl;
-
-  document.getElementById('hair').setAttribute("style", "fill: brown;");
+  radioPicked.setAttribute("fill", cl);
 
 }
-});

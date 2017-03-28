@@ -264,35 +264,31 @@
              </g>
             </g>
            </g>
-           <metadata>
-            <rdf:RDF>
-             <cc:Work rdf:about="">
-              <dc:title/>
-             </cc:Work>
-            </rdf:RDF>
-           </metadata>
           </svg>
-
-
-
         </figure>
       </div>
       <div class="my-text">
         <h1>This is me and I really love working with SVG.</h1>
-        <h4>Use the sliders to change the colors of my outfit the way you want it. Have fun!</h4>
+        <h4>Use the color picker to change the colors of my outfit the way you want. Have fun!</h4>
 
         <form>
           <label class="radio-inline">
-            <input type="radio" name="optradio" value="suit" checked>Suit
+            <input type="radio" name="optradio" value="suit" onclick = "changeRadio(this.value)" checked>Suit
           </label>
           <label class="radio-inline">
-            <input type="radio" name="optradio" value="pockets">Pockets and Lapels
+            <input type="radio" name="optradio" value="suit_details" onclick = "changeRadio(this.value)">Pockets and Lapels
           </label>
           <label class="radio-inline">
-            <input type="radio" name="optradio" value="sqpocket">Square Pocket
+            <input type="radio" name="optradio" value="pocket_square" onclick = "changeRadio(this.value)">Pocket Square
           </label>
           <label class="radio-inline">
-            <input type="radio" name="optradio" value="shirt">Shirt
+            <input type="radio" name="optradio" value="shirt" onclick = "changeRadio(this.value)">Shirt
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value="hair" onclick = "changeRadio(this.value)">Hair
+          </label>
+          <label class="radio-inline">
+            <button type="reset" class="btn btn-default">Reset</button>
           </label>
         </form>
 
