@@ -53,3 +53,13 @@ function myFunction(){
   radioPicked.setAttribute("fill", cl);
 
 }
+
+function svgReset() {
+  
+  document.getElementById("suit").setAttribute("fill", "#19224f");
+  document.getElementById("suit_details").setAttribute("fill", "#131724");
+  document.getElementById("pocket_square").setAttribute("fill", "#fff");
+  document.getElementById("shirt").setAttribute("fill", "#fff");
+  document.getElementById("hair").setAttribute("fill", "#050606");
+
+}
