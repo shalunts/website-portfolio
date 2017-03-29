@@ -1,13 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 /* -------------------------------
-   Google font
+Google font
 ------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700|Open+Sans:300,400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   //background-color: #000;
@@ -26,131 +27,6 @@ body {
   height: 100%;
   position: absolute;
 }
-@media screen and (min-width: 767px){
-  .screen {
-    .screen-content {
-      border: 2px solid #000;
-      padding: 3em;
-      font-family: 'Open Sans Condensed', sans-serif;
-      text-transform: uppercase;
-      z-index: 999;
-
-      .screen-caption {
-        font-size: 6em;
-        letter-spacing: 0.9em;
-
-      }
-      h1 {
-        letter-spacing: 0.3em;
-
-      }
-      h5 {
-        letter-spacing: 0.7em;
-
-      }
-    }
-  }
-
-}
-
-.screen {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  position: relative;
-  .screen-content {
-    border: 2px solid #000;
-    padding: 3em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    text-transform: uppercase;
-    z-index: 999;
-    .screen-caption{
-      font-size: 3em;
-      color: #fff;
-    }
-    h1 {
-      letter-spacing: 0.1em;
-
-    }
-    h5 {
-      padding-top: 10px;
-      letter-spacing: 0.3em;
-
-
-    }
-    .btn-more {
-      margin-top: 25px;
-      .btn-white {
-        font-family: 'Open sans', sans-serif;
-        letter-spacing: 5.5px;
-        color: #00b0b7;
-        font-size: 1em;
-        border: 1px solid #00b0b7;
-        padding: 8px 25px 8px 25px;
-        text-decoration: none;
-      }
-      .btn-white:hover {
-        background-color: #00b0b7;
-        color: #000;
-      }
-    }
-
-  }
-}
-
-.scroll-down
-{
-  width: 100%;
-  background-color: #000;
-  opacity: .5;
-  height: 100px;
-  position:absolute;
-  bottom: 0;
-  left: 0;
-
-  color:#fff;
-  .scroll-down-icon {
-    color: grey;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    animation-name: wiggle;
-    animation-duration: 1.2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-  }
-}
-
-@keyframes wiggle {
-  0%{
-    padding-top: 20px;
-  }
-  25%{
-    padding-top: 24px;
-  }
-  50% {
-    padding-top: 28px;
-
-  }
-  75%{
-    padding-top: 24px;
-  }
-  100%{
-    padding-top: 20px;
-
-  }
-}
-
 
 .screen:first-of-type {
   background: #000 url('../images/street_photo_1.jpg') no-repeat center center fixed;
@@ -161,12 +37,193 @@ body {
   background-size: cover;
 }
 .screen:nth-child(3) {
-  background: #fff url('../images/street_photo_2.jpg') no-repeat center center fixed;
+  background: #000 url('../images/street_photo_2.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
+// -------------------------------
+// *      Section Intro start
+// -------------------------------
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+
+  .intro-content {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    z-index: 999;
+    @media screen and (min-width: 767px) {
+      border: 2px solid #000;
+      padding: 3em;
+    }
+    .intro-caption{
+      font-size: 3em;
+      color: #fff;
+      @media screen and (min-width: 767px) {
+        font-size: 4em;
+        letter-spacing: 0.9em;
+      }
+    }
+    h1 {
+      letter-spacing: 0.1em;
+      @media screen and (min-width: 767px) {
+        letter-spacing: 0.7em;
+      }
+    }
+    h5 {
+      padding-top: 10px;
+      letter-spacing: 0.3em;
+      @media screen and (min-width: 767px) {
+        letter-spacing: 0.3em;
+      }
+    }
+
+  }
+  .scroll-down {
+    width: 100%;
+    background-color: #000;
+    opacity: .5;
+    height: 100px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+
+    color:#fff;
+    .scroll-down-icon {
+      color: grey;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+
+      animation-name: wiggle;
+      animation-duration: 1.2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+  }
+
+  @keyframes wiggle {
+    0%{
+      padding-top: 20px;
+    }
+    25%{
+      padding-top: 24px;
+    }
+    50% {
+      padding-top: 28px;
+
+    }
+    75%{
+      padding-top: 24px;
+    }
+    100%{
+      padding-top: 20px;
+
+    }
+  }
 
 
+}
+// -------------------------------
+// *      Section Intro end
+// -------------------------------
+
+
+// -------------------------------
+// *      Section Photography start
+// -------------------------------
+
+.photography {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  .photography-content {
+
+    z-index: 999;
+    text-align: center;
+    .photography-content-inner{
+      text-transform: none;
+      font-family: 'Open sans', sans-serif;
+      font-weight: lighter;
+      border: 2px solid #000;
+      margin: 0 15px;
+      padding: 8em 3em;
+      @media screen and (min-width: 767px) {
+        border: none;
+      }
+      h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 800;
+        font-size: 29px;
+        line-height: 41px;
+        letter-spacing: 2px;
+        color: #fff;
+
+        span {
+          font-size: 20px;
+          font-weight: 200;
+        }
+        margin-bottom: 3em;
+        @media screen and (min-width: 767px) {
+          margin-bottom: 1em;
+
+        }
+      }
+
+
+      .btn-more {
+        margin-top: 25px;
+        text-align: center;
+        .btn-white {
+          font-family: 'Open sans', sans-serif;
+          font-weight: 400;
+          letter-spacing: 5.5px;
+          color: #00b0b7;
+          font-size: 1em;
+          border: 2px solid #00b0b7;
+          padding: 8px 25px 8px 25px;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: background .5s ease-in, transform .25s ease-in-out;
+
+
+        }
+        .btn-white:hover {
+          background-color: #00b0b7;
+          color: #fff;
+          
+        }
+      }
+
+    }
+  }
+}
+
+// -------------------------------
+// *      Section Photography end
+// -------------------------------
+
+// -------------------------------
+// *      Section Profile start
+// -------------------------------
 .profile {
   @media screen and (min-width: 767px) {
     height: 100vh;
@@ -215,14 +272,10 @@ body {
       perspective: 500px;
       @media screen and (min-width: 767px){
 
-
           display: flex;
-
           align-items: center;
           justify-content: center;
           margin-right: 60px;
-
-
       }
     }
     .card:hover .front {
@@ -311,10 +364,7 @@ body {
       transform: rotateY(-180deg);
     }
   }
-
 }
-
-
 
 // CARDS SLIDE IN ANIMATION START
 .come-in {
@@ -334,7 +384,15 @@ body {
 }
 // CARDS SLIDE IN ANIMATION END
 
+// -------------------------------
+// *      Section Profile end
+// -------------------------------
 
+
+
+// -------------------------------
+// *      Section SVG start
+// -------------------------------
 .about{
 
   .about-content {
@@ -375,3 +433,6 @@ body {
 
   }
 }
+// -------------------------------
+// *      Section SVG end
+// -------------------------------

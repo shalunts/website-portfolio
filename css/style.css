@@ -1,3 +1,6 @@
+/* -------------------------------
+Google font
+------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700|Open+Sans:300,400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
@@ -5,9 +8,6 @@
   margin: 0;
   padding: 0; }
 
-/* -------------------------------
-   Google font
-------------------------------- */
 .container-fluid {
   padding: 0; }
 
@@ -20,21 +20,19 @@
   height: 100%;
   position: absolute; }
 
-@media screen and (min-width: 767px) {
-  .screen .screen-content {
-    border: 2px solid #000;
-    padding: 3em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    text-transform: uppercase;
-    z-index: 999; }
-    .screen .screen-content .screen-caption {
-      font-size: 6em;
-      letter-spacing: 0.9em; }
-    .screen .screen-content h1 {
-      letter-spacing: 0.3em; }
-    .screen .screen-content h5 {
-      letter-spacing: 0.7em; } }
-.screen {
+.screen:first-of-type {
+  background: #000 url("../images/street_photo_1.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.screen:nth-child(2) {
+  background: #fff url("../images/mountain_bg.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.screen:nth-child(3) {
+  background: #000 url("../images/street_photo_2.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.intro {
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -44,56 +42,53 @@
   justify-content: center;
   color: white;
   position: relative; }
-  .screen .screen-content {
-    border: 2px solid #000;
-    padding: 3em;
+  .intro .intro-content {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     z-index: 999; }
-    .screen .screen-content .screen-caption {
+    @media screen and (min-width: 767px) {
+      .intro .intro-content {
+        border: 2px solid #000;
+        padding: 3em; } }
+    .intro .intro-content .intro-caption {
       font-size: 3em;
       color: #fff; }
-    .screen .screen-content h1 {
+      @media screen and (min-width: 767px) {
+        .intro .intro-content .intro-caption {
+          font-size: 4em;
+          letter-spacing: 0.9em; } }
+    .intro .intro-content h1 {
       letter-spacing: 0.1em; }
-    .screen .screen-content h5 {
+      @media screen and (min-width: 767px) {
+        .intro .intro-content h1 {
+          letter-spacing: 0.7em; } }
+    .intro .intro-content h5 {
       padding-top: 10px;
       letter-spacing: 0.3em; }
-    .screen .screen-content .btn-more {
-      margin-top: 25px; }
-      .screen .screen-content .btn-more .btn-white {
-        font-family: 'Open sans', sans-serif;
-        letter-spacing: 5.5px;
-        color: #00b0b7;
-        font-size: 1em;
-        border: 1px solid #00b0b7;
-        padding: 8px 25px 8px 25px;
-        text-decoration: none; }
-      .screen .screen-content .btn-more .btn-white:hover {
-        background-color: #00b0b7;
-        color: #000; }
-
-.scroll-down {
-  width: 100%;
-  background-color: #000;
-  opacity: .5;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #fff; }
-  .scroll-down .scroll-down-icon {
-    color: grey;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    animation-name: wiggle;
-    animation-duration: 1.2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal; }
-
+      @media screen and (min-width: 767px) {
+        .intro .intro-content h5 {
+          letter-spacing: 0.3em; } }
+  .intro .scroll-down {
+    width: 100%;
+    background-color: #000;
+    opacity: .5;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff; }
+    .intro .scroll-down .scroll-down-icon {
+      color: grey;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      animation-name: wiggle;
+      animation-duration: 1.2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal; }
 @keyframes wiggle {
   0% {
     padding-top: 20px; }
@@ -105,17 +100,59 @@
     padding-top: 24px; }
   100% {
     padding-top: 20px; } }
-.screen:first-of-type {
-  background: #000 url("../images/street_photo_1.jpg") no-repeat center center fixed;
-  background-size: cover; }
-
-.screen:nth-child(2) {
-  background: #fff url("../images/mountain_bg.jpg") no-repeat center center fixed;
-  background-size: cover; }
-
-.screen:nth-child(3) {
-  background: #fff url("../images/street_photo_2.jpg") no-repeat center center fixed;
-  background-size: cover; }
+.photography {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative; }
+  .photography .photography-content {
+    z-index: 999;
+    text-align: center; }
+    .photography .photography-content .photography-content-inner {
+      text-transform: none;
+      font-family: 'Open sans', sans-serif;
+      font-weight: lighter;
+      border: 2px solid #000;
+      margin: 0 15px;
+      padding: 8em 3em; }
+      @media screen and (min-width: 767px) {
+        .photography .photography-content .photography-content-inner {
+          border: none; } }
+      .photography .photography-content .photography-content-inner h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 800;
+        font-size: 29px;
+        line-height: 41px;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-bottom: 3em; }
+        .photography .photography-content .photography-content-inner h1 span {
+          font-size: 20px;
+          font-weight: 200; }
+        @media screen and (min-width: 767px) {
+          .photography .photography-content .photography-content-inner h1 {
+            margin-bottom: 1em; } }
+      .photography .photography-content .photography-content-inner .btn-more {
+        margin-top: 25px;
+        text-align: center; }
+        .photography .photography-content .photography-content-inner .btn-more .btn-white {
+          font-family: 'Open sans', sans-serif;
+          font-weight: 400;
+          letter-spacing: 5.5px;
+          color: #00b0b7;
+          font-size: 1em;
+          border: 2px solid #00b0b7;
+          padding: 8px 25px 8px 25px;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: background .5s ease-in, transform .25s ease-in-out; }
+        .photography .photography-content .photography-content-inner .btn-more .btn-white:hover {
+          background-color: #00b0b7;
+          color: #fff; }
 
 .profile {
   width: 100%;
