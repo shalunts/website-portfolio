@@ -4,6 +4,8 @@ Google font
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700|Open+Sans:300,400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+
 
 * {
   margin: 0;
@@ -209,7 +211,7 @@ body {
         .btn-white:hover {
           background-color: #00b0b7;
           color: #fff;
-          
+
         }
       }
 
@@ -435,4 +437,154 @@ body {
 }
 // -------------------------------
 // *      Section SVG end
+// -------------------------------
+
+
+
+
+
+// -------------------------------
+// *      Section Skills start
+// -------------------------------
+.skills {
+  width: 100%;
+  height: 100vh;
+  background-color: LIGHTSKYBLUE;
+  .skills-caption{
+
+    margin: 1em auto;
+    width: 80%;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 6em;
+    perspective: 800px;
+          animation-iteration-count: infinite;
+    span {
+      display:inline-block;
+      margin-left: -20px;
+      color:#ceebfd;
+      transform-origin: 50% 70%;
+
+    }
+    span:nth-child(2n) {
+      color:#f9f9f9;
+    }
+    span:nth-child(1){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 6s forwards;
+
+    }
+    span:nth-child(2){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .2s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 6.2s forwards;
+
+    }
+    span:nth-child(3){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .4s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 6.4s forwards;
+
+    }
+    span:nth-child(4){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .6s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 6.6s forwards;
+
+    }
+    span:nth-child(5){
+      margin-right: 28px;
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .8s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 6.8s forwards;
+
+    }
+    span:nth-child(6){
+      margin-right: 28px;
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 7s forwards;
+
+    }
+    span:nth-child(7){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 7.2s forwards;
+
+    }
+    span:nth-child(8){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.4s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 7.4s forwards;
+
+    }
+    span:nth-child(9){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.6s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 7.6s forwards;
+
+    }
+    span:nth-child(10){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.8s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 7.8s forwards;
+
+    }
+    span:nth-child(11){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 8s forwards;
+
+    }
+    span:nth-child(12){
+      animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both,
+                 flipUp .5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 8.2s forwards;
+
+    }
+
+  }
+  .clouds {
+    position: relative;
+    .cloud{
+      position: absolute;
+    }
+    .cloud_bg{
+
+    }
+    .cloud_bg_1{
+      top: 0;
+      z-index: 102;
+      animation: drift 90s linear infinite;
+    }
+
+    .cloud_bg_2{
+      top: -100px;
+
+      z-index: 103;
+      animation: drift 40s linear infinite;
+
+    }
+    .cloud_bg_3{
+      left: -567px;
+      top: -70px;
+
+      z-index: 101;
+      animation: drift 28s linear infinite;
+      animation-delay: 5s;
+    }
+    .cloud_bg_4{
+      top: -50px;
+      z-index: 100;
+      animation: drift 65s linear infinite;
+    }
+  }
+}
+
+@keyframes drift {
+  from {transform: translateX(-255px);}
+  to {transform:translateX(1950px);}
+}
+
+@keyframes flipUp {
+  from{transform: rotateX(180deg);}
+  to{transform: rotateX(0deg);}
+}
+
+@keyframes flipDown {
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(-180deg);}
+}
+
+// -------------------------------
+// *      Section Skills start
 // -------------------------------
