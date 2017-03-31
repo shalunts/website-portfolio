@@ -9,6 +9,10 @@ Google font
   margin: 0;
   padding: 0; }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%; }
+
 .container-fluid {
   padding: 0; }
 
@@ -304,6 +308,7 @@ Google font
   height: 100vh;
   background-color: LIGHTSKYBLUE; }
   .skills .skills-caption {
+    user-select: none;
     margin: 1em auto;
     width: 80%;
     text-align: center;
@@ -345,28 +350,162 @@ Google font
     .skills .skills-caption span:nth-child(12) {
       animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both, flipUp 0.5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 8.2s forwards; }
   .skills .clouds {
-    position: relative; }
+    position: relative;
+    user-select: none; }
     .skills .clouds .cloud {
       position: absolute; }
-    .skills .clouds .cloud_bg_1 {
+    .skills .clouds .clouds_bg .cloud_bg_1 {
       top: 0;
+      left: -1069px;
       z-index: 102;
       animation: drift 90s linear infinite; }
-    .skills .clouds .cloud_bg_2 {
+    .skills .clouds .clouds_bg .cloud_bg_2 {
       top: -100px;
+      left: -567px;
       z-index: 103;
       animation: drift 40s linear infinite; }
-    .skills .clouds .cloud_bg_3 {
+    .skills .clouds .clouds_bg .cloud_bg_3 {
       left: -567px;
       top: -70px;
       z-index: 101;
       animation: drift 28s linear infinite;
       animation-delay: 5s; }
-    .skills .clouds .cloud_bg_4 {
+    .skills .clouds .clouds_bg .cloud_bg_4 {
       top: -50px;
       z-index: 100;
       animation: drift 65s linear infinite; }
+    .skills .clouds .clouds_skill .cloud-skill h1, .skills .clouds .clouds_skill .cloud-skill h2, .skills .clouds .clouds_skill .cloud-skill h3 {
+      user-select: none; }
+    .skills .clouds .clouds_skill .cloud_skill-html {
+      z-index: 206;
+      left: -500px;
+      animation: drift 15s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-html h1 {
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-css {
+      top: 100px;
+      left: -500px;
+      z-index: 205;
+      animation: drift 25s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-css h1 {
+        position: absolute;
+        top: 60px;
+        left: 90px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-js {
+      top: -100px;
+      left: -500px;
+      z-index: 204;
+      animation: drift 20s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-js h1 {
+        position: absolute;
+        top: 15px;
+        left: 120px;
+        width: 100%; }
+      .skills .clouds .clouds_skill .cloud_skill-js .cloud_skill-js:hover {
+        animation-play-state: paused; }
+    .skills .clouds .clouds_skill .cloud_skill-ps {
+      top: 300px;
+      left: -300px;
+      z-index: 203;
+      animation: drift 35s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-ps h2 {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-ai {
+      top: 250px;
+      left: -300px;
+      z-index: 207;
+      animation: drift 22s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-ai h2 {
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-bootstrap {
+      top: 180px;
+      left: -350px;
+      z-index: 208;
+      animation: drift 17s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-bootstrap h3 {
+        position: absolute;
+        top: 23px;
+        left: 30px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-jQuery {
+      top: 420px;
+      left: -300px;
+      z-index: 209;
+      animation: drift 16s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-jQuery h2 {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-github {
+      top: 220px;
+      left: -300px;
+      z-index: 210;
+      animation: drift 29s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-github h2 {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-atom {
+      top: 320px;
+      left: -350px;
+      z-index: 211;
+      animation: drift 29s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-atom h2 {
+        position: absolute;
+        top: 16px;
+        left: 40px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud_skill-csharp {
+      top: 180px;
+      left: -450px;
+      z-index: 215;
+      animation: drift 21s 2s linear infinite; }
+      .skills .clouds .clouds_skill .cloud_skill-csharp h2 {
+        position: absolute;
+        top: 10px;
+        left: 65px;
+        width: 100%; }
+    .skills .clouds .clouds_skill .cloud-skill:hover {
+      animation-play-state: paused; }
+      .skills .clouds .clouds_skill .cloud-skill:hover h1::after, .skills .clouds .clouds_skill .cloud-skill:hover h2::after, .skills .clouds .clouds_skill .cloud-skill:hover h3::after {
+        content: '100%';
+        margin-top: -4px;
+        font-size: 10px;
+        display: block;
+        animation: fadeIn 1s, slideIn .2s ease-in; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes slideIn {
+  from {
+    transform: translateX(40px); }
+  to {
+    transform: translateX(0px); } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes slideOut {
+  from {
+    transform: translateX(0px); }
+  to {
+    transform: translateX(40px); } }
 @keyframes drift {
   from {
     transform: translateX(-255px); }
