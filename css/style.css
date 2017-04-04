@@ -558,17 +558,25 @@ html, body {
   to {
     transform: rotateX(-180deg); } }
 .projects {
+  padding-top: 40px;
   width: 100%;
-  height: 100vh; }
+  padding-bottom: 60px; }
+  @media screen and (min-width: 1365px) {
+    .projects {
+      height: 100vh; } }
   .projects .container {
-    border: 1px solid blue; }
+    padding-right: 0px;
+    padding-left: 0px; }
+    @media screen and (min-width: 767px) {
+      .projects .container {
+        padding-right: 15px; } }
   @media screen and (min-width: 767px) {
     .projects .projects-wrapper {
       display: flex;
       justify-content: center;
       align-items: center; } }
   .projects .projects-wrapper .projects-item .projects-description {
-    margin: 30px 0px;
+    margin: 20px 0px;
     height: 330px;
     text-align: center;
     position: relative; }
@@ -579,80 +587,66 @@ html, body {
       position: absolute;
       top: -19px;
       left: 13px;
-      color: #DC143C;
-      animation: slideFromLeft 1s ease-out forwards; }
+      color: #D3D3D3; }
     .projects .projects-wrapper .projects-item .projects-description .right-text {
       transform-origin: bottom right;
       transform: rotate(-90deg);
       position: absolute;
       top: -80px;
-      right: -3px;
-      color: #3CB371;
-      animation: slideFromTop 1s ease-out forwards; }
+      right: 2px;
+      color: #D3D3D3; }
     .projects .projects-wrapper .projects-item .projects-description .bottom-text {
       position: absolute;
       bottom: -20px;
-      right: 13px;
+      right: 18px;
       transform: scale(-1, 1);
       transform: rotate(-180deg);
-      color: #DAA520;
-      animation: slideFromRight 1s ease-out forwards; }
+      color: #D3D3D3; }
     .projects .projects-wrapper .projects-item .projects-description .left-text {
       transform-origin: bottom left;
       transform: rotate(90deg);
       position: absolute;
       left: -3px;
       top: -33px;
-      color: #00BFFF;
-      animation: slideFromBottom 1s ease-out forwards; }
-@keyframes slideFromLeft {
-  0% {
-    transform: translateX(-500px); }
-  100% {
-    transform: translateX(0px); } }
-@keyframes slideFromTop {
-  0% {
-    transform: translateY(-500px); }
-  100% {
-    transform: translateY(0px); } }
-@keyframes slideFromRight {
-  0% {
-    transform: translateX(500px); }
-  100% {
-    transform: translateX(0px); } }
-@keyframes slideFromBottom {
-  0% {
-    transform: translateY(500px); }
-  100% {
-    transform: translateY(0px); } }
+      color: #D3D3D3; }
     .projects .projects-wrapper .projects-item .projects-description .inner-box {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 150px;
-      height: 150px; }
+      width: 200px;
+      height: 200px; }
       .projects .projects-wrapper .projects-item .projects-description .inner-box svg {
         width: 100%; }
       .projects .projects-wrapper .projects-item .projects-description .inner-box #big_gear path {
-        fill: red;
+        fill: #808080;
         transform-origin: 50% 50%;
         animation: rotate 10s linear infinite; }
-      .projects .projects-wrapper .projects-item .projects-description .inner-box #medium_gear {
-        fill: red;
+      .projects .projects-wrapper .projects-item .projects-description .inner-box #medium_gear path {
+        fill: #808080;
         transform-origin: 50% 50%;
         animation: rotate 8s linear infinite reverse; }
-      .projects .projects-wrapper .projects-item .projects-description .inner-box #small_gear {
-        margin-left: -20px;
-        fill: red;
+      .projects .projects-wrapper .projects-item .projects-description .inner-box #small_gear path {
+        margin: 20px;
+        fill: #808080;
         transform-origin: 50% 50%;
         animation: rotate 6s linear infinite reverse; }
 @keyframes rotate {
   100% {
     transform: rotate(360deg); } }
-  .projects .projects-wrapper .projects-item .project {
+  .projects .projects-wrapper .projects-item .projects_list .project {
     color: red;
-    height: 250px;
-    border: 1px solid red; }
+    height: auto; }
+    @media screen and (min-width: 767px) {
+      .projects .projects-wrapper .projects-item .projects_list .project {
+        padding-right: 0px;
+        padding-left: 0px; } }
+    .projects .projects-wrapper .projects-item .projects_list .project img {
+      width: 100%; }
+
+.footer-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #000; }
 
 /*# sourceMappingURL=style.css.map */
