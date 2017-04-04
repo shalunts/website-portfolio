@@ -295,11 +295,12 @@ html, body {
   text-align: center;
   order: 2;
   flex: 4 1 auto; }
-  .about .svg-pic .svg-reset {
-    outline: none; }
 .about .my-text {
+  padding: 0 20px;
   order: 1;
   flex: 1 1 auto; }
+  .about .my-text .svg-reset {
+    outline: none; }
   .about .my-text form {
     padding: 15px 0px 25px 0px; }
 
@@ -313,12 +314,21 @@ html, body {
     width: 80%;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 6em;
+    font-size: 2em;
     perspective: 800px;
     animation-iteration-count: infinite; }
+    @media screen and (min-width: 767px) {
+      .skills .skills-caption {
+        font-size: 6em; }
+        .skills .skills-caption span {
+          margin-left: -20px; }
+        .skills .skills-caption span:nth-child(5) {
+          margin-right: 28px; }
+        .skills .skills-caption span:nth-child(6) {
+          margin-right: 28px; } }
     .skills .skills-caption span {
       display: inline-block;
-      margin-left: -20px;
+      margin-left: -5px;
       color: #ceebfd;
       transform-origin: 50% 70%; }
     .skills .skills-caption span:nth-child(2n) {
@@ -332,10 +342,10 @@ html, body {
     .skills .skills-caption span:nth-child(4) {
       animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both, flipUp 0.5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 6.6s forwards; }
     .skills .skills-caption span:nth-child(5) {
-      margin-right: 28px;
+      margin-right: 10px;
       animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both, flipUp 0.5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 6.8s forwards; }
     .skills .skills-caption span:nth-child(6) {
-      margin-right: 28px;
+      margin-right: 10px;
       animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both, flipUp 0.5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 7s forwards; }
     .skills .skills-caption span:nth-child(7) {
       animation: flipDown 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both, flipUp 0.5s cubic-bezier(0.45, 0.03, 0.51, 0.95) 7.2s forwards; }
@@ -396,14 +406,17 @@ html, body {
         left: 90px;
         width: 100%; }
     .skills .clouds .clouds_skill .cloud_skill-js {
-      top: -100px;
+      top: 400px;
       left: -500px;
       z-index: 204;
       animation: drift 20s 2s linear infinite; }
+      @media screen and (min-width: 767px) {
+        .skills .clouds .clouds_skill .cloud_skill-js {
+          top: -100px; } }
       .skills .clouds .clouds_skill .cloud_skill-js h1 {
         position: absolute;
-        top: 15px;
-        left: 120px;
+        top: 13px;
+        left: 110px;
         width: 100%; }
       .skills .clouds .clouds_skill .cloud_skill-js .cloud_skill-js:hover {
         animation-play-state: paused; }
@@ -444,24 +457,30 @@ html, body {
       animation: drift 16s 2s linear infinite; }
       .skills .clouds .clouds_skill .cloud_skill-jQuery h2 {
         position: absolute;
-        top: 20px;
+        top: 15px;
         left: 50px;
         width: 100%; }
     .skills .clouds .clouds_skill .cloud_skill-github {
-      top: 220px;
+      top: 450px;
       left: -300px;
       z-index: 210;
-      animation: drift 29s 2s linear infinite; }
+      animation: drift 31s 2s linear infinite; }
+      @media screen and (min-width: 767px) {
+        .skills .clouds .clouds_skill .cloud_skill-github {
+          top: 220px; } }
       .skills .clouds .clouds_skill .cloud_skill-github h2 {
         position: absolute;
         top: 30px;
         left: 40px;
         width: 100%; }
     .skills .clouds .clouds_skill .cloud_skill-atom {
-      top: 320px;
+      top: 60px;
       left: -350px;
       z-index: 211;
       animation: drift 29s 2s linear infinite; }
+      @media screen and (min-width: 767px) {
+        .skills .clouds .clouds_skill .cloud_skill-atom {
+          top: 320px; } }
       .skills .clouds .clouds_skill .cloud_skill-atom h2 {
         position: absolute;
         top: 16px;
@@ -477,14 +496,31 @@ html, body {
         top: 10px;
         left: 65px;
         width: 100%; }
+    .skills .clouds .clouds_skill .skill-level {
+      display: none; }
     .skills .clouds .clouds_skill .cloud-skill:hover {
+      cursor: auto;
       animation-play-state: paused; }
+      .skills .clouds .clouds_skill .cloud-skill:hover .skill-level {
+        display: block;
+        font-size: 12px;
+        color: STEELBLUE;
+        animation: fadeIn 1s, slideIn .2s ease-in; }
+        .skills .clouds .clouds_skill .cloud-skill:hover .skill-level .level {
+          color: LIGHTGREY; }
+        .skills .clouds .clouds_skill .cloud-skill:hover .skill-level .fa-stack {
+          display: inline !important;
+          margin-right: 14px; }
+          .skills .clouds .clouds_skill .cloud-skill:hover .skill-level .fa-stack .fa-star-half {
+            margin-top: -1px; }
+          .skills .clouds .clouds_skill .cloud-skill:hover .skill-level .fa-stack .fa-star {
+            margin-top: -1px; }
       .skills .clouds .clouds_skill .cloud-skill:hover h1::after, .skills .clouds .clouds_skill .cloud-skill:hover h2::after, .skills .clouds .clouds_skill .cloud-skill:hover h3::after {
-        content: '100%';
+        content: '';
+        cursor: auto;
         margin-top: -4px;
         font-size: 10px;
-        display: block;
-        animation: fadeIn 1s, slideIn .2s ease-in; }
+        display: block; }
 
 @keyframes fadeIn {
   0% {
@@ -521,5 +557,45 @@ html, body {
     transform: rotateX(0deg); }
   to {
     transform: rotateX(-180deg); } }
+.projects {
+  width: 100%;
+  height: 100vh; }
+  .projects .container {
+    border: 1px solid blue; }
+  @media screen and (min-width: 767px) {
+    .projects .projects-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  .projects .projects-wrapper .projects-item .projects-description {
+    border: 1px solid blue;
+    height: 570px;
+    text-align: center;
+    position: relative; }
+    .projects .projects-wrapper .projects-item .projects-description .projects-caption {
+      border: 1px solid red;
+      text-transform: uppercase;
+      font-size: 69px; }
+    .projects .projects-wrapper .projects-item .projects-description .top-text {
+      position: absolute; }
+    .projects .projects-wrapper .projects-item .projects-description .right-text {
+      transform-origin: bottom right;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .projects .projects-wrapper .projects-item .projects-description .bottom-text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: scale(-1, 1); }
+    .projects .projects-wrapper .projects-item .projects-description .left-text {
+      transform-origin: bottom left;
+      transform: rotate(90deg);
+      position: absolute; }
+  .projects .projects-wrapper .projects-item .project {
+    color: red;
+    height: 250px;
+    border: 1px solid red; }
 
 /*# sourceMappingURL=style.css.map */
