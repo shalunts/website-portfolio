@@ -568,31 +568,88 @@ html, body {
       justify-content: center;
       align-items: center; } }
   .projects .projects-wrapper .projects-item .projects-description {
-    border: 1px solid blue;
-    height: 570px;
+    margin: 30px 0px;
+    height: 330px;
     text-align: center;
     position: relative; }
     .projects .projects-wrapper .projects-item .projects-description .projects-caption {
-      border: 1px solid red;
       text-transform: uppercase;
-      font-size: 69px; }
+      font-size: 54px; }
     .projects .projects-wrapper .projects-item .projects-description .top-text {
-      position: absolute; }
+      position: absolute;
+      top: -19px;
+      left: 13px;
+      color: #DC143C;
+      animation: slideFromLeft 1s ease-out forwards; }
     .projects .projects-wrapper .projects-item .projects-description .right-text {
       transform-origin: bottom right;
       transform: rotate(-90deg);
       position: absolute;
-      top: 0;
-      right: 0; }
+      top: -80px;
+      right: -3px;
+      color: #3CB371;
+      animation: slideFromTop 1s ease-out forwards; }
     .projects .projects-wrapper .projects-item .projects-description .bottom-text {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: scale(-1, 1); }
+      bottom: -20px;
+      right: 13px;
+      transform: scale(-1, 1);
+      transform: rotate(-180deg);
+      color: #DAA520;
+      animation: slideFromRight 1s ease-out forwards; }
     .projects .projects-wrapper .projects-item .projects-description .left-text {
       transform-origin: bottom left;
       transform: rotate(90deg);
-      position: absolute; }
+      position: absolute;
+      left: -3px;
+      top: -33px;
+      color: #00BFFF;
+      animation: slideFromBottom 1s ease-out forwards; }
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-500px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-500px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(500px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(500px); }
+  100% {
+    transform: translateY(0px); } }
+    .projects .projects-wrapper .projects-item .projects-description .inner-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px; }
+      .projects .projects-wrapper .projects-item .projects-description .inner-box svg {
+        width: 100%; }
+      .projects .projects-wrapper .projects-item .projects-description .inner-box #big_gear path {
+        fill: red;
+        transform-origin: 50% 50%;
+        animation: rotate 10s linear infinite; }
+      .projects .projects-wrapper .projects-item .projects-description .inner-box #medium_gear {
+        fill: red;
+        transform-origin: 50% 50%;
+        animation: rotate 8s linear infinite reverse; }
+      .projects .projects-wrapper .projects-item .projects-description .inner-box #small_gear {
+        margin-left: -20px;
+        fill: red;
+        transform-origin: 50% 50%;
+        animation: rotate 6s linear infinite reverse; }
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg); } }
   .projects .projects-wrapper .projects-item .project {
     color: red;
     height: 250px;

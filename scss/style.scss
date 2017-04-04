@@ -844,41 +844,113 @@ html, body
     .projects-item {
       //width:100%;
       .projects-description {
+        margin:30px 0px;
 
-        border: 1px solid blue;
-        height: 570px;
+        //border: 1px solid blue;
+        height: 330px;
         text-align: center;
         position: relative;
 
         .projects-caption{
-          border: 1px solid red;
+          //border: 1px solid red;
           text-transform: uppercase;
-          font-size: 69px;
+          font-size: 54px;
         }
         .top-text {
           position: absolute;
+          top: -19px;
+          left:13px;
+          color: #DC143C;
 
+          animation: slideFromLeft 1s ease-out forwards;
 
         }
         .right-text {
           transform-origin: bottom right;
           transform: rotate(-90deg);
           position: absolute;
-          top: 0;
-          right: 0;
+          top: -80px;
+          right: -3px;
+          color: #3CB371;
+
+          animation: slideFromTop 1s ease-out forwards;
+
+
         }
         .bottom-text {
+
           position: absolute;
-          bottom: 0;
-          right: 0;
+          bottom: -20px;
+          right: 13px;
           transform: scale(-1, 1);
+          transform: rotate(-180deg);
+          color: #DAA520;
+
+          animation: slideFromRight 1s ease-out forwards;
+
 
         }
         .left-text {
           transform-origin: bottom left;
           transform: rotate(90deg);
           position: absolute;
+          left: -3px;
+          top: -33px;
+          color: #00BFFF;
 
+          animation: slideFromBottom 1s ease-out forwards;
+
+        }
+          @keyframes slideFromLeft {
+            0% {transform: translateX(-500px);}
+            100% {transform: translateX(0px);}
+          }
+          @keyframes slideFromTop {
+            0% {transform: translateY(-500px);}
+            100% {transform: translateY(0px);}
+          }
+          @keyframes slideFromRight {
+            0% {transform: translateX(500px);}
+            100% {transform: translateX(0px);}
+          }
+          @keyframes slideFromBottom {
+            0% {transform: translateY(500px);}
+            100% {transform: translateY(0px);}
+          }
+
+        .inner-box{
+          // background: url(../images/gears.svg);
+          // background-size: cover;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 150px;
+          height:150px;
+          //border:1px solid red;
+          svg {
+            width: 100%;
+
+          }
+          #big_gear path{
+            fill: red;
+            transform-origin: 50% 50%;
+            animation: rotate 10s linear infinite;
+          }
+          #medium_gear{
+            fill: red;
+            transform-origin: 50% 50%;
+            animation: rotate 8s linear infinite reverse;
+          }
+          #small_gear {
+            margin-left: -20px;
+            fill: red;
+            transform-origin: 50% 50%;
+            animation: rotate 6s linear infinite reverse;
+          }
+          @keyframes rotate {
+            100% {transform: rotate(360deg);}
+          }
         }
       }
 
