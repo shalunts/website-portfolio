@@ -5,8 +5,6 @@ Google font
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
-
-
 * {
   margin: 0;
   padding: 0;
@@ -144,86 +142,6 @@ html, body
 // *      Section Intro end
 // -------------------------------
 
-
-// -------------------------------
-// *      Section Photography start
-// -------------------------------
-
-.photography {
-
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  position: relative;
-  .photography-content {
-
-    z-index: 999;
-    text-align: center;
-    .photography-content-inner{
-      text-transform: none;
-      font-family: 'Open sans', sans-serif;
-      font-weight: lighter;
-      border: 2px solid #000;
-      margin: 0 15px;
-      padding: 8em 3em;
-      @media screen and (min-width: 767px) {
-        border: none;
-      }
-      h1 {
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 800;
-        font-size: 29px;
-        line-height: 41px;
-        letter-spacing: 2px;
-        color: #fff;
-
-        span {
-          font-size: 20px;
-          font-weight: 200;
-        }
-        margin-bottom: 3em;
-        @media screen and (min-width: 767px) {
-          margin-bottom: 1em;
-
-        }
-      }
-
-
-      .btn-more {
-        margin-top: 25px;
-        text-align: center;
-        .btn-white {
-          font-family: 'Open sans', sans-serif;
-          font-weight: 400;
-          letter-spacing: 5.5px;
-          color: #00b0b7;
-          font-size: 1em;
-          border: 2px solid #00b0b7;
-          padding: 8px 25px 8px 25px;
-          text-decoration: none;
-          text-transform: uppercase;
-          transition: background .5s ease-in, transform .25s ease-in-out;
-
-
-        }
-        .btn-white:hover {
-          background-color: #00b0b7;
-          color: #fff;
-
-        }
-      }
-
-    }
-  }
-}
-
-// -------------------------------
-// *      Section Photography end
-// -------------------------------
 
 // -------------------------------
 // *      Section Profile start
@@ -392,7 +310,85 @@ html, body
 // *      Section Profile end
 // -------------------------------
 
+// -------------------------------
+// *      Section Photography start
+// -------------------------------
 
+.photography {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  .photography-content {
+
+    z-index: 999;
+    text-align: center;
+    .photography-content-inner{
+      text-transform: none;
+      font-family: 'Open sans', sans-serif;
+      font-weight: lighter;
+      border: 2px solid #000;
+      margin: 0 15px;
+      padding: 8em 3em;
+      @media screen and (min-width: 767px) {
+        border: none;
+      }
+      h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 800;
+        font-size: 29px;
+        line-height: 41px;
+        letter-spacing: 2px;
+        color: #fff;
+
+        span {
+          font-size: 20px;
+          font-weight: 200;
+        }
+        margin-bottom: 3em;
+        @media screen and (min-width: 767px) {
+          margin-bottom: 1em;
+
+        }
+      }
+
+
+      .btn-more {
+        margin-top: 25px;
+        text-align: center;
+        .btn-white {
+          font-family: 'Open sans', sans-serif;
+          font-weight: 400;
+          letter-spacing: 5.5px;
+          color: #00b0b7;
+          font-size: 1em;
+          border: 2px solid #00b0b7;
+          padding: 8px 25px 8px 25px;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: background .5s ease-in, transform .25s ease-in-out;
+
+
+        }
+        .btn-white:hover {
+          background-color: #00b0b7;
+          color: #fff;
+
+        }
+      }
+
+    }
+  }
+}
+
+// -------------------------------
+// *      Section Photography end
+// -------------------------------
 
 // -------------------------------
 // *      Section SVG start
@@ -453,8 +449,10 @@ html, body
   background-color: LIGHTSKYBLUE;
 
   .skills-caption{
+
     @media screen and (min-width: 767px){
       font-size: 6em;
+      margin-top: 0px;
       span {
         margin-left: -20px;
       }
@@ -951,7 +949,68 @@ html, body
 
       .projects_list{
         user-select: none;
-        
+
+        .project {
+          margin-bottom:1px;
+          overflow: hidden;
+
+          .project-caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 75%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 75%);
+            opacity: 0;
+            -webkit-transform: translate3d(0,50%,0);
+            transform: translate3d(0,50%,0);
+            -webkit-transition: opacity 0.20s, -webkit-transform 0.20s;
+            transition: opacity 0.20s, transform 0.20s;
+            h2 {
+              width: 100%;
+
+              position: absolute;
+              top: 65%;
+              text-align: center;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 1.4em;
+              font-weight: 100;
+              letter-spacing: 1.5px;
+              -webkit-transition: top 0.20s, -webkit-transform 0.20s;
+              transition: top 0.20s, transform 0.20s;
+
+              span {
+                font-weight: 800;
+                letter-spacing: 1.6px;
+              }
+            }
+            a {
+
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+            }
+          }
+          &:hover{
+            .project-caption{
+              opacity: 1;
+              -webkit-transform: translate3d(0,0,0);
+              transform: translate3d(0,0,0);
+              h2 {
+                text-align: center;
+                position: absolute;
+                top: 70%;
+                opacity: 1;
+              }
+            }
+          }
+        }
         .project-1 {
           animation: slideInRight 1.2s ease-in-out forwards,
                       fadeIn 1.5s ease-in;
@@ -978,7 +1037,6 @@ html, body
         }
 
         .project {
-          color: red;
           height: auto;
           //border: 1px solid red;
           @media screen and (min-width: 767px){
@@ -991,6 +1049,7 @@ html, body
           }
         }
       }
+
     }
     @keyframes slideInRight {
       0% {transform: translateX(1000px);}

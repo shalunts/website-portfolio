@@ -105,60 +105,6 @@ html, body {
     padding-top: 24px; }
   100% {
     padding-top: 20px; } }
-.photography {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  position: relative; }
-  .photography .photography-content {
-    z-index: 999;
-    text-align: center; }
-    .photography .photography-content .photography-content-inner {
-      text-transform: none;
-      font-family: 'Open sans', sans-serif;
-      font-weight: lighter;
-      border: 2px solid #000;
-      margin: 0 15px;
-      padding: 8em 3em; }
-      @media screen and (min-width: 767px) {
-        .photography .photography-content .photography-content-inner {
-          border: none; } }
-      .photography .photography-content .photography-content-inner h1 {
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 800;
-        font-size: 29px;
-        line-height: 41px;
-        letter-spacing: 2px;
-        color: #fff;
-        margin-bottom: 3em; }
-        .photography .photography-content .photography-content-inner h1 span {
-          font-size: 20px;
-          font-weight: 200; }
-        @media screen and (min-width: 767px) {
-          .photography .photography-content .photography-content-inner h1 {
-            margin-bottom: 1em; } }
-      .photography .photography-content .photography-content-inner .btn-more {
-        margin-top: 25px;
-        text-align: center; }
-        .photography .photography-content .photography-content-inner .btn-more .btn-white {
-          font-family: 'Open sans', sans-serif;
-          font-weight: 400;
-          letter-spacing: 5.5px;
-          color: #00b0b7;
-          font-size: 1em;
-          border: 2px solid #00b0b7;
-          padding: 8px 25px 8px 25px;
-          text-decoration: none;
-          text-transform: uppercase;
-          transition: background .5s ease-in, transform .25s ease-in-out; }
-        .photography .photography-content .photography-content-inner .btn-more .btn-white:hover {
-          background-color: #00b0b7;
-          color: #fff; }
-
 .profile {
   width: 100%;
   text-align: center;
@@ -279,6 +225,60 @@ html, body {
 @keyframes come-in {
   to {
     transform: translateY(0); } }
+.photography {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative; }
+  .photography .photography-content {
+    z-index: 999;
+    text-align: center; }
+    .photography .photography-content .photography-content-inner {
+      text-transform: none;
+      font-family: 'Open sans', sans-serif;
+      font-weight: lighter;
+      border: 2px solid #000;
+      margin: 0 15px;
+      padding: 8em 3em; }
+      @media screen and (min-width: 767px) {
+        .photography .photography-content .photography-content-inner {
+          border: none; } }
+      .photography .photography-content .photography-content-inner h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 800;
+        font-size: 29px;
+        line-height: 41px;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-bottom: 3em; }
+        .photography .photography-content .photography-content-inner h1 span {
+          font-size: 20px;
+          font-weight: 200; }
+        @media screen and (min-width: 767px) {
+          .photography .photography-content .photography-content-inner h1 {
+            margin-bottom: 1em; } }
+      .photography .photography-content .photography-content-inner .btn-more {
+        margin-top: 25px;
+        text-align: center; }
+        .photography .photography-content .photography-content-inner .btn-more .btn-white {
+          font-family: 'Open sans', sans-serif;
+          font-weight: 400;
+          letter-spacing: 5.5px;
+          color: #00b0b7;
+          font-size: 1em;
+          border: 2px solid #00b0b7;
+          padding: 8px 25px 8px 25px;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: background .5s ease-in, transform .25s ease-in-out; }
+        .photography .photography-content .photography-content-inner .btn-more .btn-white:hover {
+          background-color: #00b0b7;
+          color: #fff; }
+
 .about .about-content {
   display: flex;
   flex-direction: column;
@@ -319,7 +319,8 @@ html, body {
     animation-iteration-count: infinite; }
     @media screen and (min-width: 767px) {
       .skills .skills-caption {
-        font-size: 6em; }
+        font-size: 6em;
+        margin-top: 0px; }
         .skills .skills-caption span {
           margin-left: -20px; }
         .skills .skills-caption span:nth-child(5) {
@@ -637,6 +638,53 @@ html, body {
     transform: rotate(360deg); } }
   .projects .projects-wrapper .projects-item .projects_list {
     user-select: none; }
+    .projects .projects-wrapper .projects-item .projects_list .project {
+      margin-bottom: 1px;
+      overflow: hidden; }
+      .projects .projects-wrapper .projects-item .projects_list .project .project-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 75%);
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 75%);
+        opacity: 0;
+        -webkit-transform: translate3d(0, 50%, 0);
+        transform: translate3d(0, 50%, 0);
+        -webkit-transition: opacity 0.20s, -webkit-transform 0.20s;
+        transition: opacity 0.20s, transform 0.20s; }
+        .projects .projects-wrapper .projects-item .projects_list .project .project-caption h2 {
+          width: 100%;
+          position: absolute;
+          top: 65%;
+          text-align: center;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 1.4em;
+          font-weight: 100;
+          letter-spacing: 1.5px;
+          -webkit-transition: top 0.20s, -webkit-transform 0.20s;
+          transition: top 0.20s, transform 0.20s; }
+          .projects .projects-wrapper .projects-item .projects_list .project .project-caption h2 span {
+            font-weight: 800;
+            letter-spacing: 1.6px; }
+        .projects .projects-wrapper .projects-item .projects_list .project .project-caption a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0; }
+      .projects .projects-wrapper .projects-item .projects_list .project:hover .project-caption {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
+        .projects .projects-wrapper .projects-item .projects_list .project:hover .project-caption h2 {
+          text-align: center;
+          position: absolute;
+          top: 70%;
+          opacity: 1; }
     .projects .projects-wrapper .projects-item .projects_list .project-1 {
       animation: slideInRight 1.2s ease-in-out forwards, fadeIn 1.5s ease-in; }
     .projects .projects-wrapper .projects-item .projects_list .project-2 {
@@ -650,7 +698,6 @@ html, body {
     .projects .projects-wrapper .projects-item .projects_list .project-6 {
       animation: slideInRight 1.6s ease-in-out forwards, fadeIn 1.5s ease-in; }
     .projects .projects-wrapper .projects-item .projects_list .project {
-      color: red;
       height: auto; }
       @media screen and (min-width: 767px) {
         .projects .projects-wrapper .projects-item .projects_list .project {

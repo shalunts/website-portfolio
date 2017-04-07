@@ -1,4 +1,7 @@
+// Cards in profile start
+
 (function($) {
+
 
   $.fn.visible = function(partial) {
 
@@ -15,7 +18,9 @@
 
   };
 
+
 })(jQuery);
+
 
 var win = $(window);
 
@@ -39,6 +44,11 @@ win.scroll(function(event) {
 
 });
 
+    // Cards in profile end
+
+
+    // SVG color picking start
+
 var radioPicked = suit;
 
 function changeRadio(value){
@@ -55,7 +65,7 @@ function myFunction(){
 }
 
 function svgReset() {
-  
+
   document.getElementById("suit").setAttribute("fill", "#19224f");
   document.getElementById("suit_details").setAttribute("fill", "#131724");
   document.getElementById("pocket_square").setAttribute("fill", "#fff");
@@ -63,3 +73,4 @@ function svgReset() {
   document.getElementById("hair").setAttribute("fill", "#050606");
 
 }
+      // SVG color picking end
