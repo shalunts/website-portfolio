@@ -35,7 +35,7 @@
       </div>
     </section>
 
-    <section class="profile-section" >
+    <section id="profile" class="profile-section" >
       <div class="profile">
         <h1>What i do..</h1>
 
@@ -95,7 +95,7 @@
       <div class="photography-content">
         <div class="photography-content-inner">
           <h1>Photography is the story <br>
-            <span>I fail to put into words</span>
+            <span>I fail to put into CSS</span>
           </h1>
           <div class="btn-more">
             <a href="http://www.haykshalunts.com" target="_blank" class="btn-white">See more</a>
@@ -560,92 +560,98 @@
     </section>
 
     <section class="footer screen">
-        <div class="footer-content">
+        <div class="container footer-content">
+          <div class="row">
 
-          <div class="contact">
-            <form class="form-horizontal" id="contact_form">
-              <fieldset>
+            <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1 contact">
+              <form class="form-horizontal" id="contact_form">
+                <fieldset>
 
-                <!-- Form Name -->
-                <legend>Message me</legend>
+                  <!-- Form Name -->
+                  <legend>Message me</legend>
 
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="name">Name</label>
-                  <div class="col-md-6">
-                    <input id="name" name="name" type="text" placeholder="Your full name" class="form-control input-md" required="">
+                  <div class="row">
 
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-lg-3 control-label" for="name">Name</label>
+                      <div class="col-lg-7">
+                        <input id="name" name="name" type="text" placeholder="Your full name" class="form-control input-lg" required="">
+
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-lg-3 control-label" for="email">Email</label>
+                      <div class="col-lg-7">
+                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control input-lg" required="">
+
+                      </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                      <label class="col-lg-3 control-label" for="msg">Message</label>
+                      <div class="col-lg-7">
+                        <textarea class="form-control" id="msg" name="msg" cols="6" rows="6"></textarea>
+                      </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                      <label class="col-lg-3 control-label" for="submit"></label>
+                      <div class="col-lg-7">
+                        <button id="submit" name="submit" class="btn btn-primary">Send Message</button>
+                      </div>
+                    </div>
+                    <hr>
                   </div>
-                </div>
 
-                <!-- Text input-->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="email">Email</label>
-                  <div class="col-md-6">
-                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control input-md" required="">
+                </fieldset>
+              </form>
 
-                  </div>
-                </div>
+            </div>
 
-                <!-- Textarea -->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="msg">Message</label>
-                  <div class="col-md-6">
-                    <textarea class="form-control" id="msg" name="msg" cols="6" rows="6"></textarea>
-                  </div>
-                </div>
+            <div class="col-xs-12 social-media-list">
+              <ul>
+                <li>
+                  <a href="http://www.linkedin.com/in/shalunts" class="link" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true">
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/shalunts" class="link" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true">
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://codepen.io/shalunts/" class="link" target="_blank">
+                    <i class="fa fa-codepen" aria-hidden="true">
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/u/0/102303047985836360829" class="link" target="_blank">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.instagram.com/haykshalunts" class="link" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true">
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-                <!-- Button -->
-                <div class="form-group">
-                  <label class="col-md-4 control-label" for="submit"></label>
-                  <div class="col-md-4">
-                    <button id="submit" name="submit" class="btn btn-primary">Send Message</button>
-                  </div>
-                </div>
-                <hr>
+            <div class="col-xs-12 copyright">
+              <p>&#169 2017 Hayk Shalunts | hello@iamhayk.com</p>
+            </div>
 
-              </fieldset>
-            </form>
-
-          </div>
-
-          <div class="social-media-list">
-            <ul>
-              <li>
-                <a href="http://www.linkedin.com/in/shalunts" class="link" target="_blank">
-                  <i class="fa fa-linkedin" aria-hidden="true">
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/shalunts" class="link" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true">
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a href="https://codepen.io/shalunts/" class="link" target="_blank">
-                  <i class="fa fa-codepen" aria-hidden="true">
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a href="https://plus.google.com/u/0/102303047985836360829" class="link" target="_blank">
-                  <i class="fa fa-google-plus" aria-hidden="true"></i>
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a href="http://www.instagram.com/haykshalunts" class="link" target="_blank">
-                  <i class="fa fa-instagram" aria-hidden="true">
-                  </i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="copyright">
-            <p>&#169 2017 Hayk Shalunts</p>
           </div>
 
         </div>

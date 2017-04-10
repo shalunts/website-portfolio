@@ -1,3 +1,19 @@
+//Smoth Scroll
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+
 // Cards in profile start
 
 (function($) {
@@ -5,14 +21,14 @@
 
   $.fn.visible = function(partial) {
 
-      var $t            = $(this),
-          $w            = $(window),
-          viewTop       = $w.scrollTop(),
-          viewBottom    = viewTop + $w.height(),
-          _top          = $t.offset().top,
-          _bottom       = _top + $t.height(),
-          compareTop    = partial === true ? _bottom : _top,
-          compareBottom = partial === true ? _top : _bottom;
+    var $t            = $(this),
+    $w            = $(window),
+    viewTop       = $w.scrollTop(),
+    viewBottom    = viewTop + $w.height(),
+    _top          = $t.offset().top,
+    _bottom       = _top + $t.height(),
+    compareTop    = partial === true ? _bottom : _top,
+    compareBottom = partial === true ? _top : _bottom;
 
     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
@@ -44,10 +60,10 @@ win.scroll(function(event) {
 
 });
 
-    // Cards in profile end
+// Cards in profile end
 
 
-    // SVG color picking start
+// SVG color picking start
 
 var radioPicked = suit;
 
@@ -73,49 +89,49 @@ function svgReset() {
   document.getElementById("hair").setAttribute("fill", "#050606");
 
 }
-      // SVG color picking end
+// SVG color picking end
 
 
 
-      jQuery(function($)
+jQuery(function($)
+{
+  $("#contact_form").submit(function()
+  {
+    var email = $("#email").val(); // get email field value
+    var name = $("#name").val(); // get name field value
+    var msg = $("#msg").val(); // get message field value
+    $.ajax(
       {
-          $("#contact_form").submit(function()
-          {
-              var email = $("#email").val(); // get email field value
-              var name = $("#name").val(); // get name field value
-              var msg = $("#msg").val(); // get message field value
-              $.ajax(
+        type: "POST",
+        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        data: {
+          'key': 'sVRLFidC1A7K56TuUkyUQg',
+          'message': {
+            'from_email': email,
+            'from_name': name,
+            'headers': {
+              'Reply-To': email
+            },
+            'subject': 'Website Contact Form Submission',
+            'text': msg,
+            'to': [
               {
-                  type: "POST",
-                  url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                  data: {
-                      'key': 'sVRLFidC1A7K56TuUkyUQg',
-                      'message': {
-                          'from_email': email,
-                          'from_name': name,
-                          'headers': {
-                              'Reply-To': email
-                          },
-                          'subject': 'Website Contact Form Submission',
-                          'text': msg,
-                          'to': [
-                          {
-                              'email': 'hayk.shalunts@gmail.com',
-                              'name': 'Hayk Shalunts',
-                              'type': 'to'
-                          }]
-                      }
-                  }
-              })
-              .done(function(response) {
-                  alert('Your message has been sent. Thank you!'); // show success message
-                  $("#name").val(''); // reset field after successful submission
-                  $("#email").val(''); // reset field after successful submission
-                  $("#msg").val(''); // reset field after successful submission
-              })
-              .fail(function(response) {
-                  alert('Error sending message.');
-              });
-              return false; // prevent page refresh
-          });
+                'email': 'hayk.shalunts@gmail.com',
+                'name': 'Hayk Shalunts',
+                'type': 'to'
+              }]
+            }
+          }
+        })
+        .done(function(response) {
+          alert('Your message has been sent. Thank you!'); // show success message
+          $("#name").val(''); // reset field after successful submission
+          $("#email").val(''); // reset field after successful submission
+          $("#msg").val(''); // reset field after successful submission
+        })
+        .fail(function(response) {
+          alert('Error sending message.');
+        });
+        return false; // prevent page refresh
       });
+    });
