@@ -16,7 +16,7 @@ html, body {
 .container-fluid {
   padding: 0; }
 
-.screen:first-of-type::before, .screen:nth-child(3)::before {
+.screen::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
@@ -35,6 +35,10 @@ html, body {
 
 .screen:nth-child(3) {
   background: #000 url("../images/street_photo_2.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.screen {
+  background: #000 url("../images/mountain_bg.jpg") no-repeat center center fixed;
   background-size: cover; }
 
 .intro {
@@ -722,9 +726,43 @@ html, body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-.footer-wrapper {
+.footer {
   width: 100%;
   height: 100vh;
-  background-color: #000; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative; }
+  .footer .footer-content {
+    z-index: 999; }
+    .footer .footer-content .contact legend {
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      color: #fff; }
+    .footer .footer-content .social-media-list {
+      margin: 15px 0px; }
+      .footer .footer-content .social-media-list ul {
+        font-size: 1.5em;
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-around; }
+        @media screen and (min-width: 767px) {
+          .footer .footer-content .social-media-list ul {
+            width: 30vw; } }
+      .footer .footer-content .social-media-list li {
+        list-style: none; }
+      .footer .footer-content .social-media-list a {
+        color: #fff; }
+      .footer .footer-content .social-media-list a:hover {
+        color: #fff; }
+    .footer .footer-content .copyright p {
+      margin-top: 10px;
+      text-align: center;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
