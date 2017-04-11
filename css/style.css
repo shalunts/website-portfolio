@@ -30,14 +30,10 @@ html, body {
   background-size: cover; }
 
 .screen:nth-child(2) {
-  background: #fff url("../images/mountain_bg.jpg") no-repeat center center fixed;
+  background: red url("../images/street_photo_2.jpg") no-repeat center center fixed;
   background-size: cover; }
 
-.screen:nth-child(3) {
-  background: #000 url("../images/street_photo_2.jpg") no-repeat center center fixed;
-  background-size: cover; }
-
-.screen {
+.screen:last-of-type {
   background: #000 url("../images/street_photo_4.jpg") no-repeat center center fixed;
   background-size: cover; }
 
@@ -109,7 +105,36 @@ html, body {
     padding-top: 24px; }
   100% {
     padding-top: 20px; } }
-.profile {
+@media screen and (min-width: 767px) {
+  .profile-section {
+    height: 100vh; } }
+.profile-section .menu {
+  z-index: 999; }
+  .profile-section .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #262626; }
+  .profile-section .menu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: .6em 1em; }
+    .profile-section .menu li a:hover {
+      background: #4d4d4d; }
+    .profile-section .menu li a:active {
+      background: #4d4d4d; }
+@media screen and (min-width: 30em) {
+  .profile-section .single-nav {
+    z-index: 999; }
+    .profile-section .single-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .profile-section .single-nav li {
+      flex: 1 0 auto;
+      text-align: center; } }
+.profile-section .profile {
   width: 100%;
   text-align: center;
   color: black;
@@ -117,70 +142,67 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  @media screen and (min-width: 767px) {
-    .profile {
-      height: 100vh; } }
-  .profile h1 {
+  .profile-section .profile h1 {
     margin-bottom: 50px;
     font-size: 5em;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     color: #2c3e50; }
-  .profile .profile_content {
+  .profile-section .profile .profile_content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
     @media screen and (min-width: 767px) {
-      .profile .profile_content {
+      .profile-section .profile .profile_content {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         margin-right: 60px; } }
-    .profile .profile_content .card {
+    .profile-section .profile .profile_content .card {
       margin-bottom: 60px;
       height: 400px;
       width: 300px;
       position: relative;
       perspective: 500px; }
       @media screen and (min-width: 767px) {
-        .profile .profile_content .card {
+        .profile-section .profile .profile_content .card {
           display: flex;
           align-items: center;
           justify-content: center;
           margin-right: 60px; } }
-    .profile .profile_content .card:hover .front {
+    .profile-section .profile .profile_content .card:hover .front {
       transform: rotateY(180deg); }
-    .profile .profile_content .card:hover .back {
+    .profile-section .profile .profile_content .card:hover .back {
       transform: rotateY(0deg); }
-    .profile .profile_content .card::before,
-    .profile .profile_content .card::after {
+    .profile-section .profile .profile_content .card::before,
+    .profile-section .profile .profile_content .card::after {
       content: "";
       width: 30px;
       height: 30px;
       opacity: 1;
       position: absolute;
       transition: all 0.8s ease; }
-    .profile .profile_content .card::before {
+    .profile-section .profile .profile_content .card::before {
       background-color: #2c3e50;
       top: -15px;
       left: -15px; }
-    .profile .profile_content .card::after {
+    .profile-section .profile .profile_content .card::after {
       background-color: #2c3e50;
       bottom: -15px;
       right: -15px; }
-    .profile .profile_content .card:hover:before {
+    .profile-section .profile .profile_content .card:hover:before {
       background-color: #BDC3C7;
       margin-top: -17px;
       top: 100%;
       right: 100%; }
-    .profile .profile_content .card:hover:after {
+    .profile-section .profile .profile_content .card:hover:after {
       background-color: #BDC3C7;
       margin: -17px;
       right: 100%;
       bottom: 100%; }
-    .profile .profile_content .faces {
+    .profile-section .profile .profile_content .faces {
       position: absolute;
       top: 0;
       left: 0;
@@ -188,28 +210,28 @@ html, body {
       width: 100%;
       backface-visibility: hidden;
       transition: 1s; }
-    .profile .profile_content .front {
+    .profile-section .profile .profile_content .front {
       display: flex;
       justify-content: center;
       align-items: center;
       background: #566573;
       border-radius: 3px; }
-      .profile .profile_content .front .card--name i {
+      .profile-section .profile .profile_content .front .card--name i {
         color: #fff;
         font-size: 2em; }
-      .profile .profile_content .front .card--name p {
+      .profile-section .profile .profile_content .front .card--name p {
         font-size: 2em;
         text-transform: uppercase;
         color: #fff;
         font-family: 'Oswald', sans-serif; }
-    .profile .profile_content .back {
+    .profile-section .profile .profile_content .back {
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #2c3e50;
       border-radius: 3px;
       transform: rotateY(-180deg); }
-      .profile .profile_content .back .card--content {
+      .profile-section .profile .profile_content .back .card--content {
         padding: 15px;
         color: #ddd;
         font-family: 'Oswald', sans-serif;
@@ -239,7 +261,7 @@ html, body {
   color: white;
   position: relative; }
   .photography .photography-content {
-    z-index: 999;
+    z-index: 100;
     text-align: center; }
     .photography .photography-content .photography-content-inner {
       text-transform: none;
@@ -283,29 +305,33 @@ html, body {
           background-color: #00b0b7;
           color: #fff; }
 
-.about .about-content {
+@media screen and (min-width: 767px) {
+  .svg-picture {
+    width: 100%;
+    height: 100vh; } }
+.svg-picture .svg-picture-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
   @media screen and (min-width: 767px) {
-    .about .about-content {
+    .svg-picture .svg-picture-content {
       flex-direction: row; }
-      .about .about-content .svg-pic {
+      .svg-picture .svg-picture-content .svg-pic {
         order: 1; }
-      .about .about-content .my-text {
+      .svg-picture .svg-picture-content .my-text {
         order: 2; } }
-.about .svg-pic {
+.svg-picture .svg-pic {
   text-align: center;
   order: 2;
   flex: 4 1 auto; }
-.about .my-text {
+.svg-picture .my-text {
   padding: 0 20px;
   order: 1;
   flex: 1 1 auto; }
-  .about .my-text .svg-reset {
+  .svg-picture .my-text .svg-reset {
     outline: none; }
-  .about .my-text form {
+  .svg-picture .my-text form {
     padding: 15px 0px 25px 0px; }
 
 .skills {

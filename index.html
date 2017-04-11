@@ -21,7 +21,7 @@
 
   <div class="container-fluid main">
 
-    <section class="intro screen">
+    <section  id="intro" class="intro screen">
       <div class="intro-content">
         <p class="intro-caption">Hello, I'm Hayk!</p>
         <hr>
@@ -36,6 +36,17 @@
     </section>
 
     <section id="profile" class="profile-section" >
+      <nav id="single-nav" class="single-nav menu" role="navigation">
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#svg">SVG</a></li>
+          <li><a href="#photography">Photography</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
       <div class="profile">
         <h1>What i do..</h1>
 
@@ -91,21 +102,179 @@
       </div>
     </section>
 
-    <section class="photography screen">
-      <div class="photography-content">
-        <div class="photography-content-inner">
-          <h1>Photography is the story <br>
-            <span>I fail to put into CSS</span>
-          </h1>
-          <div class="btn-more">
-            <a href="http://www.haykshalunts.com" target="_blank" class="btn-white">See more</a>
+    <section  id="skills" class="skills">
+      <div class="skills-content">
+        <div class="skills-caption">
+          <span>T</span>
+          <span>O</span>
+          <span>O</span>
+          <span>L</span>
+          <span>S</span>
+          <span>&</span>
+          <span>S</span>
+          <span>K</span>
+          <span>I</span>
+          <span>L</span>
+          <span>L</span>
+          <span>S</span>
+        </div>
+        <div class="clouds">
+          <div class="clouds_bg">
+            <div class="cloud cloud_bg_1"><img src="../images/clouds/cloud_bg_1.svg" alt="Cloud image"></div>
+            <div class="cloud cloud_bg_2"><img src="../images/clouds/cloud_bg_2.svg" alt="Cloud image"></div>
+            <div class="cloud cloud_bg_3"><img src="../images/clouds/cloud_bg_3.svg" alt="Cloud image"></div>
+            <div class="cloud cloud_bg_4"><img src="../images/clouds/cloud_bg_4.svg" alt="Cloud image"></div>
+          </div>
+
+          <div class="clouds_skill">
+
+            <div class="cloud cloud-skill cloud_skill-html">
+              <img src="../images/clouds/cloud_1.svg" alt="Cloud image">
+              <h1>HTML
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h1>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-css">
+              <img src="../images/clouds/cloud_2.svg" alt="Cloud image">
+              <h1>CSS
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h1>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-js">
+              <img src="../images/clouds/cloud_3.svg" alt="Cloud image">
+              <h1>JS
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <!-- Half star coloring -->
+                  <span class="fa-stack">
+                    <i class="level fa fa-star fa-stack-1x" aria-hidden="true"></i>
+                    <i class="fa fa-star-half fa-stack-1x" aria-hidden="true"></i>
+                  </span>
+                  <!-- Half star coloring -->
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h1>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-ps">
+              <img src="../images/clouds/cloud_4.svg" alt="Cloud image">
+              <h2>Photoshop
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h2>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-ai">
+              <img src="../images/clouds/cloud_5.svg" alt="Cloud image">
+              <h2>Illustrator
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h2>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-bootstrap">
+              <img src="../images/clouds/cloud_6.svg" alt="Cloud image">
+              <h3>Bootstrap
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h3>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-jQuery">
+              <img src="../images/clouds/cloud_7.svg" alt="Cloud image">
+              <h2>JQuery
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <!-- Half star coloring -->
+                  <span class="fa-stack">
+                    <i class="level fa fa-star fa-stack-1x" aria-hidden="true"></i>
+                    <i class="fa fa-star-half fa-stack-1x" aria-hidden="true"></i>
+                  </span>
+                  <!-- Half star coloring -->
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h2>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-github">
+              <img src="../images/clouds/cloud_8.svg" alt="Cloud image">
+              <h2>Github
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h2>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-atom">
+              <img src="../images/clouds/cloud_9.svg" alt="Cloud image">
+              <h2>Atom
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h2>
+            </div>
+
+            <div class="cloud cloud-skill cloud_skill-csharp">
+              <img src="../images/clouds/cloud_10.svg" alt="Cloud image">
+              <h2>C#
+                <span class="skill-level">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                  <i class="level fa fa-star" aria-hidden="true"></i>
+                </span>
+              </h2>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about">
-      <div class="about-content">
+    <section  id="svg" class="svg-picture">
+      <div class="svg-picture-content">
         <div class="svg-pic">
           <figure class="my-picture">
             <!-- <img class="img-responsive" src="../images/me.svg" alt="My picture"> -->
@@ -302,178 +471,20 @@
       </div>
     </section>
 
-    <section class="skills">
-      <div class="skills-content">
-        <div class="skills-caption">
-          <span>T</span>
-          <span>O</span>
-          <span>O</span>
-          <span>L</span>
-          <span>S</span>
-          <span>&</span>
-          <span>S</span>
-          <span>K</span>
-          <span>I</span>
-          <span>L</span>
-          <span>L</span>
-          <span>S</span>
-        </div>
-        <div class="clouds">
-          <div class="clouds_bg">
-            <div class="cloud cloud_bg_1"><img src="../images/clouds/cloud_bg_1.svg" alt="Cloud image"></div>
-            <div class="cloud cloud_bg_2"><img src="../images/clouds/cloud_bg_2.svg" alt="Cloud image"></div>
-            <div class="cloud cloud_bg_3"><img src="../images/clouds/cloud_bg_3.svg" alt="Cloud image"></div>
-            <div class="cloud cloud_bg_4"><img src="../images/clouds/cloud_bg_4.svg" alt="Cloud image"></div>
-          </div>
-
-          <div class="clouds_skill">
-
-            <div class="cloud cloud-skill cloud_skill-html">
-              <img src="../images/clouds/cloud_1.svg" alt="Cloud image">
-              <h1>HTML
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h1>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-css">
-              <img src="../images/clouds/cloud_2.svg" alt="Cloud image">
-              <h1>CSS
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h1>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-js">
-              <img src="../images/clouds/cloud_3.svg" alt="Cloud image">
-              <h1>JS
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <!-- Half star coloring -->
-                  <span class="fa-stack">
-                    <i class="level fa fa-star fa-stack-1x" aria-hidden="true"></i>
-                    <i class="fa fa-star-half fa-stack-1x" aria-hidden="true"></i>
-                  </span>
-                  <!-- Half star coloring -->
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h1>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-ps">
-              <img src="../images/clouds/cloud_4.svg" alt="Cloud image">
-              <h2>Photoshop
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h2>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-ai">
-              <img src="../images/clouds/cloud_5.svg" alt="Cloud image">
-              <h2>Illustrator
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h2>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-bootstrap">
-              <img src="../images/clouds/cloud_6.svg" alt="Cloud image">
-              <h3>Bootstrap
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h3>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-jQuery">
-              <img src="../images/clouds/cloud_7.svg" alt="Cloud image">
-              <h2>JQuery
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <!-- Half star coloring -->
-                  <span class="fa-stack">
-                    <i class="level fa fa-star fa-stack-1x" aria-hidden="true"></i>
-                    <i class="fa fa-star-half fa-stack-1x" aria-hidden="true"></i>
-                  </span>
-                  <!-- Half star coloring -->
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h2>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-github">
-              <img src="../images/clouds/cloud_8.svg" alt="Cloud image">
-              <h2>Github
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h2>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-atom">
-              <img src="../images/clouds/cloud_9.svg" alt="Cloud image">
-              <h2>Atom
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h2>
-            </div>
-
-            <div class="cloud cloud-skill cloud_skill-csharp">
-              <img src="../images/clouds/cloud_10.svg" alt="Cloud image">
-              <h2>C#
-                <span class="skill-level">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                  <i class="level fa fa-star" aria-hidden="true"></i>
-                </span>
-              </h2>
-            </div>
-
+    <section  id="photography" class="photography screen">
+      <div class="photography-content">
+        <div class="photography-content-inner">
+          <h1>Photography is the story <br>
+            <span>I fail to put into CSS</span>
+          </h1>
+          <div class="btn-more">
+            <a href="http://www.haykshalunts.com" target="_blank" class="btn-white">See more</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="projects">
+    <section  id="projects" class="projects">
       <div class="container">
         <div class="row projects-wrapper">
 
@@ -559,7 +570,7 @@
       </div>
     </section>
 
-    <section class="footer screen">
+    <section  id="footer" class="footer screen">
         <div class="container footer-content">
           <div class="row">
 
