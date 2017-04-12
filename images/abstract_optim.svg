@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="511.15mm" height="511.15mm" version="1.1" viewBox="37 25 241.14917 241.14917" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(51.395 6.9893)">
+  <g transform="matrix(1.8674 0 0 1.8674 -51.393 -6.9876)" fill="none" stroke="#ed1c24" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+   <g stroke-width=".0889">
+    <line class="st3" x1="85.479" x2="81.142" y1="121.17" y2="121.17"/>
+    <line class="st3" x1="45.453" x2="45.453" y1="85.479" y2="81.142"/>
+    <line class="st3" x1="81.142" x2="85.479" y1="45.453" y2="45.453"/>
+    <line class="st3" x1="121.17" x2="121.17" y1="81.142" y2="85.479"/>
+   </g>
+   <g stroke-width=".1009">
+    <line class="st8" x1="94.734" x2="71.887" y1="119.02" y2="119.02"/>
+    <line class="st8" x1="47.598" x2="47.598" y1="94.734" y2="71.887"/>
+    <line class="st8" x1="71.887" x2="94.734" y1="47.599" y2="47.599"/>
+    <line class="st8" x1="119.02" x2="119.02" y1="71.887" y2="94.734"/>
+   </g>
+   <g stroke-width=".0332">
+    <polyline class="st9" points="88.594 91.194 85.343 91.194 85.343 94.444"/>
+    <polyline class="st9" points="91.193 78.026 91.193 81.277 94.443 81.277"/>
+    <polyline class="st9" points="78.026 75.427 81.277 75.427 81.277 72.177"/>
+    <polyline class="st9" points="75.427 88.594 75.427 85.343 72.177 85.343"/>
+    <polyline class="st9" points="78.026 91.194 81.277 91.194 81.277 94.444"/>
+    <polyline class="st9" points="91.193 88.594 91.193 85.343 94.443 85.343"/>
+    <polyline class="st9" points="88.594 75.427 85.343 75.427 85.343 72.177"/>
+    <polyline class="st9" points="75.427 78.026 75.427 81.277 72.177 81.277"/>
+    <polyline class="st9" points="88.594 108.29 85.343 108.29 85.343 105.04"/>
+    <polyline class="st9" points="108.29 78.026 108.29 81.277 105.04 81.277"/>
+    <polyline class="st9" points="78.026 58.334 81.277 58.334 81.277 61.585"/>
+    <polyline class="st9" points="58.334 88.594 58.334 85.343 61.585 85.343"/>
+    <polyline class="st9" points="78.026 108.29 81.277 108.29 81.277 105.04"/>
+    <polyline class="st9" points="108.29 88.594 108.29 85.343 105.04 85.343"/>
+    <polyline class="st9" points="88.594 58.334 85.343 58.334 85.343 61.585"/>
+    <polyline class="st9" points="58.334 78.026 58.334 81.277 61.585 81.277"/>
+   </g>
+   <g stroke-width=".0932">
+    <line class="st2" x1="100.17" x2="66.453" y1="116.88" y2="116.88"/>
+    <line class="st2" x1="49.744" x2="49.744" y1="100.17" y2="66.453"/>
+    <line class="st2" x1="66.453" x2="100.17" y1="49.744" y2="49.744"/>
+    <line class="st2" x1="116.88" x2="116.88" y1="66.453" y2="100.17"/>
+   </g>
+   <g stroke-width=".0896">
+    <polyline class="st6" points="97.327 137.04 97.327 135.41 98.959 135.41"/>
+    <polyline class="st6" points="137.04 69.294 135.41 69.294 135.41 67.661"/>
+    <polyline class="st6" points="69.294 29.579 69.294 31.212 67.661 31.212"/>
+    <polyline class="st6" points="29.579 97.326 31.212 97.326 31.212 98.959"/>
+    <polyline class="st6" points="69.294 137.04 69.294 135.41 67.661 135.41"/>
+    <polyline class="st6" points="137.04 97.326 135.41 97.326 135.41 98.959"/>
+    <polyline class="st6" points="97.327 29.579 97.327 31.212 98.959 31.212"/>
+    <polyline class="st6" points="29.579 69.294 31.212 69.294 31.212 67.661"/>
+    <polyline class="st6" points="98.959 125.45 87.368 125.45 87.368 137.04"/>
+    <polyline class="st6" points="125.45 67.661 125.45 79.253 137.04 79.253"/>
+    <polyline class="st6" points="67.661 41.171 79.253 41.171 79.253 29.579"/>
+    <polyline class="st6" points="41.17 98.959 41.17 87.368 29.579 87.368"/>
+    <polyline class="st6" points="67.661 125.45 79.253 125.45 79.253 137.04"/>
+    <polyline class="st6" points="125.45 98.959 125.45 87.368 137.04 87.368"/>
+    <polyline class="st6" points="98.959 41.171 87.368 41.171 87.368 29.579"/>
+    <polyline class="st6" points="41.17 67.661 41.17 79.253 29.579 79.253"/>
+   </g>
+   <g stroke-width=".0925">
+    <polygon class="st1" points="73.286 87.486 73.286 93.335 79.135 93.335 79.135 106.14 60.476 106.14 60.476 87.486"/>
+    <polygon class="st1" points="79.135 73.286 73.286 73.286 73.286 79.135 60.476 79.135 60.476 60.477 79.135 60.477"/>
+    <polygon class="st1" points="93.334 79.135 93.334 73.286 87.486 73.286 87.486 60.477 106.14 60.477 106.14 79.135"/>
+    <polygon class="st1" points="87.486 93.335 93.334 93.335 93.334 87.486 106.14 87.486 106.14 106.14 87.486 106.14"/>
+   </g>
+   <g stroke-width=".0339">
+    <rect class="st0" x="81.871" y="81.871" width="2.879" height="2.878"/>
+    <line class="st0" x1="95.769" x2="70.851" y1="114.73" y2="114.73"/>
+    <line class="st0" x1="51.891" x2="51.891" y1="95.769" y2="70.851"/>
+    <line class="st0" x1="70.851" x2="95.769" y1="51.891" y2="51.891"/>
+    <line class="st0" x1="114.73" x2="114.73" y1="70.851" y2="95.769"/>
+   </g>
+   <g stroke-width=".0332">
+    <polyline class="st9" points="85.228 133.38 85.228 123.31 95.298 123.31"/>
+    <polyline class="st9" points="133.38 81.392 123.31 81.392 123.31 71.322"/>
+    <polyline class="st9" points="81.392 33.24 81.392 43.31 71.322 43.31"/>
+    <polyline class="st9" points="33.24 85.228 43.31 85.228 43.31 95.298"/>
+    <polyline class="st9" points="81.392 133.38 81.392 123.31 71.322 123.31"/>
+    <polyline class="st9" points="133.38 85.228 123.31 85.228 123.31 95.298"/>
+    <polyline class="st9" points="85.228 33.24 85.228 43.31 95.298 43.31"/>
+    <polyline class="st9" points="33.24 81.392 43.31 81.392 43.31 71.322"/>
+   </g>
+   <g stroke-width=".0925">
+    <polyline class="st1" points="93.052 150.85 93.052 131.14 112.76 131.14"/>
+    <polyline class="st1" points="150.85 73.567 131.14 73.567 131.14 53.856"/>
+    <polyline class="st1" points="73.567 15.774 73.567 35.485 53.857 35.485"/>
+    <polyline class="st1" points="15.774 93.053 35.485 93.053 35.485 112.76"/>
+    <polyline class="st1" points="73.567 150.85 73.567 131.14 53.857 131.14"/>
+    <polyline class="st1" points="150.85 93.053 131.14 93.053 131.14 112.76"/>
+    <polyline class="st1" points="93.052 15.774 93.052 35.485 112.76 35.485"/>
+    <polyline class="st1" points="15.774 73.567 35.485 73.567 35.485 53.856"/>
+    <polyline class="st1" points="91.64 150.85 91.64 129.72 112.76 129.72"/>
+    <polyline class="st1" points="150.85 74.979 129.72 74.979 129.72 53.856"/>
+    <polyline class="st1" points="74.98 15.774 74.98 36.897 53.857 36.897"/>
+    <polyline class="st1" points="15.774 91.64 36.897 91.64 36.897 112.76"/>
+    <polyline class="st1" points="74.98 150.85 74.98 129.72 53.857 129.72"/>
+    <polyline class="st1" points="150.85 91.64 129.72 91.64 129.72 112.76"/>
+    <polyline class="st1" points="91.64 15.774 91.64 36.897 112.76 36.897"/>
+    <polyline class="st1" points="15.774 74.979 36.897 74.979 36.897 53.856"/>
+   </g>
+   <g stroke-width=".0889">
+    <rect class="st3" x="81.49" y="81.49" width="3.641" height="3.641"/>
+    <polyline class="st3" points="48.399 122.12 48.399 118.22 44.5 118.22"/>
+    <polyline class="st3" points="44.5 48.399 48.399 48.399 48.399 44.5"/>
+    <polyline class="st3" points="118.22 44.5 118.22 48.399 122.12 48.399"/>
+    <polyline class="st3" points="122.12 118.22 118.22 118.22 118.22 122.12"/>
+   </g>
+   <g stroke-width=".1009">
+    <rect class="st8" x="62.21" y="98.943" width="5.467" height="5.467"/>
+    <rect class="st8" x="62.21" y="62.21" width="5.467" height="5.467"/>
+    <rect class="st8" x="98.943" y="62.21" width="5.467" height="5.467"/>
+    <rect class="st8" x="98.943" y="98.943" width="5.467" height="5.467"/>
+    <rect class="st8" x="77.994" y="77.994" width="10.633" height="10.633"/>
+    <polyline class="st8" points="51.895 137.2 51.895 114.72 29.421 114.72"/>
+    <polyline class="st8" points="29.421 51.895 51.895 51.895 51.895 29.421"/>
+    <polyline class="st8" points="114.72 29.421 114.72 51.895 137.2 51.895"/>
+    <polyline class="st8" points="137.2 114.72 114.72 114.72 114.72 137.2"/>
+   </g>
+   <g stroke-width=".0332">
+    <polyline class="st9" points="97.234 127.2 97.234 121.9 91.938 121.9"/>
+    <polyline class="st9" points="127.2 69.386 121.9 69.386 121.9 74.682"/>
+    <polyline class="st9" points="69.386 39.423 69.386 44.72 74.682 44.72"/>
+    <polyline class="st9" points="39.423 97.234 44.72 97.234 44.72 91.938"/>
+    <polyline class="st9" points="69.386 127.2 69.386 121.9 74.682 121.9"/>
+    <polyline class="st9" points="127.2 97.234 121.9 97.234 121.9 91.938"/>
+    <polyline class="st9" points="97.234 39.423 97.234 44.72 91.938 44.72"/>
+    <polyline class="st9" points="39.423 69.386 44.72 69.386 44.72 74.682"/>
+   </g>
+   <g stroke-width=".0932">
+    <rect class="st2" x="58.716" y="95.448" width="12.456" height="12.456"/>
+    <rect class="st2" x="58.716" y="58.716" width="12.456" height="12.456"/>
+    <rect class="st2" x="95.448" y="58.716" width="12.456" height="12.456"/>
+    <rect class="st2" x="95.448" y="95.448" width="12.456" height="12.456"/>
+    <rect class="st2" x="74.499" y="74.499" width="17.623" height="17.623"/>
+    <polyline class="st2" points="55.39 146.05 55.39 111.23 20.568 111.23"/>
+    <polyline class="st2" points="20.568 55.39 55.39 55.39 55.39 20.568"/>
+    <polyline class="st2" points="111.23 20.568 111.23 55.39 146.05 55.39"/>
+    <polyline class="st2" points="146.05 111.23 111.23 111.23 111.23 146.05"/>
+   </g>
+   <g stroke-width=".0896">
+    <polyline class="st6" points="141.42 144.08 141.42 141.42 144.08 141.42"/>
+    <polyline class="st6" points="22.537 141.42 25.198 141.42 25.198 144.08"/>
+    <polyline class="st6" points="25.198 22.537 25.198 25.198 22.537 25.198"/>
+    <polyline class="st6" points="144.08 25.198 141.42 25.198 141.42 22.537"/>
+    <polyline class="st6" points="144.08 125.2 125.2 125.2 125.2 144.08"/>
+    <polyline class="st6" points="41.422 144.08 41.422 125.2 22.537 125.2"/>
+    <polyline class="st6" points="22.537 41.422 41.422 41.422 41.422 22.537"/>
+    <polyline class="st6" points="125.2 22.537 125.2 41.422 144.08 41.422"/>
+   </g>
+   <g stroke-width=".0925">
+    <polyline class="st1" points="72.875 156.47 72.875 125.39 93.745 125.39 93.745 156.47"/>
+    <polyline class="st1" points="10.152 72.875 41.23 72.875 41.23 93.745 10.152 93.745"/>
+    <polyline class="st1" points="93.745 10.152 93.745 41.23 72.875 41.23 72.875 10.152"/>
+    <polyline class="st1" points="156.47 93.745 125.39 93.745 125.39 72.875 156.47 72.875"/>
+   </g>
+   <g stroke-width=".0339">
+    <line class="st0" x1="81.189" x2="85.431" y1="95.62" y2="95.62"/>
+    <line class="st0" x1="71" x2="71" y1="81.189" y2="85.431"/>
+    <line class="st0" x1="85.431" x2="81.189" y1="71" y2="71"/>
+    <line class="st0" x1="95.62" x2="95.62" y1="85.431" y2="81.189"/>
+    <line class="st0" x1="107.73" x2="107.73" y1="138.89" y2="117.92"/>
+    <line class="st0" x1="138.89" x2="117.92" y1="58.888" y2="58.888"/>
+    <line class="st0" x1="58.888" x2="58.888" y1="27.734" y2="48.699"/>
+    <line class="st0" x1="27.734" x2="48.699" y1="107.73" y2="107.73"/>
+    <line class="st0" x1="58.888" x2="58.888" y1="138.89" y2="117.92"/>
+    <line class="st0" x1="138.89" x2="117.92" y1="107.73" y2="107.73"/>
+    <line class="st0" x1="107.73" x2="107.73" y1="27.734" y2="48.699"/>
+    <line class="st0" x1="27.734" x2="48.699" y1="58.888" y2="58.888"/>
+    <polyline class="st0" points="101.21 111.4 91.949 111.4 91.949 102.14"/>
+    <polyline class="st0" points="111.4 65.407 111.4 74.671 102.14 74.671"/>
+    <polyline class="st0" points="65.407 55.216 74.671 55.216 74.671 64.482"/>
+    <polyline class="st0" points="55.216 101.21 55.216 91.949 64.482 91.949"/>
+    <polyline class="st0" points="65.407 111.4 74.671 111.4 74.671 102.14"/>
+    <polyline class="st0" points="111.4 101.21 111.4 91.949 102.14 91.949"/>
+    <polyline class="st0" points="101.21 55.216 91.949 55.216 91.949 64.482"/>
+    <polyline class="st0" points="55.216 65.407 55.216 74.671 64.482 74.671"/>
+   </g>
+   <g stroke-width=".0332">
+    <polyline class="st9" points="121.71 138.12 121.71 121.71 138.12 121.71"/>
+    <polyline class="st9" points="28.501 121.71 44.908 121.71 44.908 138.12"/>
+    <polyline class="st9" points="44.908 28.501 44.908 44.908 28.501 44.908"/>
+    <polyline class="st9" points="138.12 44.908 121.71 44.908 121.71 28.501"/>
+   </g>
+   <g stroke-width=".0925">
+    <polyline class="st1" points="134.46 166.57 134.46 134.46 166.57 134.46"/>
+    <polyline class="st1" points="0.046 134.46 32.16 134.46 32.16 166.57"/>
+    <polyline class="st1" points="32.16 0.046 32.16 32.16 0.046 32.16"/>
+    <polyline class="st1" points="166.57 32.16 134.46 32.16 134.46 0.046"/>
+    <polyline class="st1" points="132.16 166.57 132.16 132.16 166.57 132.16"/>
+    <polyline class="st1" points="0.046 132.16 34.46 132.16 34.46 166.57"/>
+    <polyline class="st1" points="34.46 0.046 34.46 34.46 0.046 34.46"/>
+    <polyline class="st1" points="166.57 34.46 132.16 34.46 132.16 0.046"/>
+   </g>
+   <path class="st5" d="m105.89 134.56" stroke-width=".0529"/>
+   <g stroke-width=".0558">
+    <polygon class="st7" points="84.764 84.764 84.764 102.81 100.55 102.81 100.55 118.59 118.59 118.59 118.59 100.55 102.81 100.55 102.81 84.764"/>
+    <polygon class="st7" points="81.856 84.764 63.814 84.764 63.814 100.55 48.033 100.55 48.033 118.59 66.074 118.59 66.074 102.81 81.856 102.81"/>
+    <polygon class="st7" points="81.856 81.856 81.856 63.814 66.074 63.814 66.074 48.033 48.033 48.033 48.033 66.074 63.814 66.074 63.814 81.856"/>
+    <polygon class="st7" points="84.764 81.856 102.81 81.856 102.81 66.074 118.59 66.074 118.59 48.033 100.55 48.033 100.55 63.814 84.764 63.814"/>
+   </g>
+   <g stroke-width=".0925">
+    <polyline class="st1" points="102.08 118.07 118.07 118.07 118.07 102.08"/>
+    <polyline class="st1" points="48.55 102.08 48.55 118.07 64.536 118.07"/>
+    <polyline class="st1" points="64.536 48.55 48.55 48.55 48.55 64.536"/>
+    <polyline class="st1" points="118.07 64.536 118.07 48.55 102.08 48.55"/>
+    <polyline class="st1" points="101.27 85.282 85.282 85.282 85.282 101.27"/>
+    <polyline class="st1" points="81.338 101.27 81.338 85.282 65.353 85.282"/>
+    <polyline class="st1" points="65.353 81.338 81.338 81.338 81.338 65.353"/>
+    <polyline class="st1" points="85.282 65.353 85.282 81.338 101.27 81.338"/>
+    <polyline class="st1" points="86.302 102.29 101.06 102.29 101.06 117.05"/>
+    <polyline class="st1" points="102.29 80.318 102.29 65.556 117.05 65.556"/>
+    <polyline class="st1" points="80.318 64.333 65.556 64.333 65.556 49.57"/>
+    <polyline class="st1" points="64.333 86.302 64.333 101.06 49.57 101.06"/>
+    <polyline class="st1" points="80.318 102.29 65.556 102.29 65.556 117.05"/>
+    <polyline class="st1" points="102.29 86.302 102.29 101.06 117.05 101.06"/>
+    <polyline class="st1" points="86.302 64.333 101.06 64.333 101.06 49.57"/>
+    <polyline class="st1" points="64.333 80.318 64.333 65.556 49.57 65.556"/>
+    <polyline class="st1" points="116 116.52 116.52 116.52 116.52 116"/>
+    <polyline class="st1" points="50.095 116 50.095 116.52 50.623 116.52"/>
+    <polyline class="st1" points="50.623 50.095 50.095 50.095 50.095 50.623"/>
+    <polyline class="st1" points="116.52 50.623 116.52 50.095 116 50.095"/>
+    <polyline class="st1" points="87.354 86.828 86.828 86.828 86.828 87.354"/>
+    <polyline class="st1" points="79.792 87.354 79.792 86.828 79.266 86.828"/>
+    <polyline class="st1" points="79.266 79.792 79.792 79.792 79.792 79.266"/>
+    <polyline class="st1" points="86.828 79.266 86.828 79.792 87.354 79.792"/>
+   </g>
+   <g stroke-width=".0522">
+    <polyline class="st4" points="86.828 98.376 86.828 100.74 89.197 100.74"/>
+    <polyline class="st4" points="98.376 79.792 100.74 79.792 100.74 77.423"/>
+    <polyline class="st4" points="79.792 68.244 79.792 65.881 77.423 65.881"/>
+    <polyline class="st4" points="68.244 86.828 65.881 86.828 65.881 89.197"/>
+    <polyline class="st4" points="79.792 98.376 79.792 100.74 77.423 100.74"/>
+    <polyline class="st4" points="98.376 86.828 100.74 86.828 100.74 89.197"/>
+    <polyline class="st4" points="86.828 68.244 86.828 65.881 89.197 65.881"/>
+    <polyline class="st4" points="68.244 79.792 65.881 79.792 65.881 77.423"/>
+    <polyline class="st4" points="104.98 116.52 102.61 116.52 102.61 114.16"/>
+    <polyline class="st4" points="116.52 61.645 116.52 64.007 114.16 64.007"/>
+    <polyline class="st4" points="61.645 50.095 64.007 50.095 64.007 52.464"/>
+    <polyline class="st4" points="50.095 104.98 50.095 102.61 52.464 102.61"/>
+    <polyline class="st4" points="61.645 116.52 64.007 116.52 64.007 114.16"/>
+    <polyline class="st4" points="116.52 104.98 116.52 102.61 114.16 102.61"/>
+    <polyline class="st4" points="104.98 50.095 102.61 50.095 102.61 52.464"/>
+    <polyline class="st4" points="50.095 61.645 50.095 64.007 52.464 64.007"/>
+   </g>
+  </g>
+ </g>
+ <style type="text/css"><![CDATA[
+	.st0{fill:none;stroke:#ccc;stroke-width:0.0339;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#ccc;stroke-width:0.0925;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#ccc;stroke-width:0.0932;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#ccc;stroke-width:0.0889;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#ccc;stroke-width:0.0522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#ccc;stroke-width:0.0529;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#ccc;stroke-width:0.0896;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#ccc;stroke-width:0.0558;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#ccc;stroke-width:0.1009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#ccc;stroke-width:0.0332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+]]></style>
+</svg>
