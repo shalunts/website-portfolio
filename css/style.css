@@ -127,7 +127,7 @@ html, body {
   align-items: center;
   justify-content: center; }
   .profile-section .profile h1 {
-    margin: 50px 0px;
+    margin: 100px 0px;
     font-size: 5em;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -489,7 +489,7 @@ html, body {
   from {
     transform: translateX(-255px); }
   to {
-    transform: translateX(1950px); } }
+    transform: translateX(2950px); } }
 @keyframes flipUp {
   from {
     transform: rotateX(180deg); }
