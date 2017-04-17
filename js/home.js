@@ -1,8 +1,13 @@
 $(document).ready(function(){
+
+// Show active class in menu
+
   $(".nav a").on("click", function(){
      $(".nav").find(".active").removeClass("active");
      $(this).parent().addClass("active");
   });
+
+// Sticky menu
 
   var nav = $(".menu"),
       pos = nav.offset().top;
@@ -19,10 +24,13 @@ $(document).ready(function(){
     }
   });
 
+// Menu dropdown toggle for mobile devices
+
   $(".navbar-nav li a").click(function(event) {
       if (!$(this).parent().hasClass('dropdown'))
           $(".navbar-collapse").collapse('hide');
   });
+
 
 });
 

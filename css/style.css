@@ -29,7 +29,7 @@ html, body {
   width: 100%;
   height: 100vh;
   text-align: center;
-  background: #000 url("../images/street_photo_1.jpg") no-repeat center center fixed;
+  background: red url("../images/street_photo_1.jpg") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -37,11 +37,18 @@ html, body {
   justify-content: center;
   color: white;
   position: relative; }
+  @media screen and (min-width: 1025px) {
+    .intro {
+      background: #000 url(../images/street_photo_1.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
   .intro .intro-content {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     z-index: 999; }
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 1025px) {
       .intro .intro-content {
         border: 2px solid #000;
         padding: 3em; } }
@@ -69,9 +76,13 @@ html, body {
     opacity: .5;
     height: 100px;
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     left: 0;
     color: #fff; }
+    @media screen and (min-width: 1025px) {
+      .intro .scroll-down {
+        bottom: 0;
+        left: 0; } }
     .intro .scroll-down .scroll-down-icon {
       color: grey;
       font-size: 1.5em;
@@ -774,6 +785,13 @@ html, body {
             opacity: 1; }
     .projects .projects-wrapper .projects-item .projects_list .project-1 {
       animation: slideInRight 1.2s ease-in-out forwards, fadeIn 1.5s ease-in; }
+      .projects .projects-wrapper .projects-item .projects_list .project-1 p {
+        text-align: center;
+        padding: 120px 15px 0px 15px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: lighter;
+        letter-spacing: 1px; }
     .projects .projects-wrapper .projects-item .projects_list .project-2 {
       animation: slideInRight 1.4s ease-in-out forwards, fadeIn 1.5s ease-in; }
     .projects .projects-wrapper .projects-item .projects_list .project-3 {
