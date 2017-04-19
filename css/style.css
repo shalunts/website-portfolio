@@ -168,6 +168,8 @@ html, body {
         .profile-section .menu .container .navbar-header .navbar-brand span {
           font-weight: 800;
           letter-spacing: 1px; }
+  .profile-section .active {
+    background-color: #000; }
   .profile-section .fixed {
     position: fixed;
     top: 0;

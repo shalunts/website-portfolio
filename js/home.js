@@ -6,6 +6,10 @@ $(document).ready(function(){
      $(".nav").find(".active").removeClass("active");
      $(this).parent().addClass("active");
   });
+  $("#scroll-down-icon").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $("#menu--profile").addClass("active");
+  });
 
 // Sticky menu
 
