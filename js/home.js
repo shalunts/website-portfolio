@@ -1,14 +1,59 @@
 $(document).ready(function(){
 
+  var intro = $("#intro"),
+      profile = $("#profile"),
+      skills = $("#skills"),
+      svg = $("#svg"),
+      photography = $("#photography"),
+      projects = $("#projects"),
+      footer = $("#footer");
+
+  profile.css("display", "none");
+  skills.css("display", "none");
+  svg.css("display", "none");
+  photography.css("display", "none");
+  projects.css("display", "none");
+  footer.css("display", "none");
+
+
+
+  $("#scroll-down-icon").on("click", function(){
+
+    profile.css("display", "block");
+    skills.css("display", "block");
+    svg.css("display", "block");
+    photography.css("display", "flex");
+    projects.css("display", "block");
+    footer.css("display", "flex");
+    intro.css("display", "none");
+
+
+
+    $(".nav").find(".active").removeClass("active");
+    $("#menu--profile").addClass("active");
+  });
+
+
+
 // Show active class in menu
 
   $(".nav a").on("click", function(){
      $(".nav").find(".active").removeClass("active");
      $(this).parent().addClass("active");
   });
-  $("#scroll-down-icon").on("click", function(){
-    $(".nav").find(".active").removeClass("active");
-    $("#menu--profile").addClass("active");
+
+  //Smooth Scroll
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
   });
 
 // Sticky menu
@@ -18,7 +63,6 @@ $(document).ready(function(){
   $(window).scroll(function(){
     if($(this).scrollTop()>pos){
       $(".profile").css("margin-top", "50px");
-
       nav.addClass("fixed");
     }
     else{
@@ -41,21 +85,7 @@ $(document).ready(function(){
 
 
 
-//Smooth Scroll
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
 
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-});
 
 // Cards in profile start
 
