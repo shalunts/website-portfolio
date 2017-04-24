@@ -1246,6 +1246,9 @@ html, body {
       color: #fff;
       font-size: 10px;
       letter-spacing: 1px; }
+      .footer .footer-content .copyright p .codedirection {
+        unicode-bidi: bidi-override;
+        direction: rtl; }
       @media screen and (min-width: 321px) {
         .footer .footer-content .copyright p {
           font-size: 1em; } }
