@@ -831,6 +831,8 @@ html, body {
       padding: 15px 0px 25px 0px; }
       .svg-picture .my-text form .radio-inline {
         font-weight: 100; }
+    .svg-picture .my-text .form-control {
+      margin: 0 auto; }
   .svg-picture .effect {
     position: relative; }
   .svg-picture .effect:before, .svg-picture .effect:after {
