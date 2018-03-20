@@ -264,6 +264,7 @@ html, body {
         height: 30px;
         opacity: 1;
         position: absolute;
+        -webkit-transition: all 0.8s ease;
         transition: all 0.8s ease; }
       .profile-section .profile .profile_content .card::before {
         background-color: #2c3e50;
@@ -291,6 +292,7 @@ html, body {
         width: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        -webkit-transition: 1s;
         transition: 1s; }
       .profile-section .profile .profile_content .front {
         display: -webkit-box;
@@ -845,6 +847,7 @@ html, body {
     top: 80%;
     max-width: 300px;
     background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
     box-shadow: 0 15px 10px #777;
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg); }
@@ -863,6 +866,7 @@ html, body {
 .photography {
   width: 100%;
   height: 100vh;
+  letter-spacing: 3px;
   background: #000 url(../images/street_photo_2.jpg) no-repeat center center fixed;
   background-size: cover;
   display: -webkit-box;
@@ -925,6 +929,7 @@ html, body {
           text-decoration: none;
           text-transform: uppercase;
           transition: background .5s ease-in, -webkit-transform .25s ease-in-out;
+          -webkit-transition: background .5s ease-in, -webkit-transform .25s ease-in-out;
           transition: background .5s ease-in, transform .25s ease-in-out;
           transition: background .5s ease-in, transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }
         .photography .photography-content .photography-content-inner .btn-more .btn-white:hover {
@@ -1021,36 +1026,29 @@ html, body {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: 205px;
-        height: 205px; }
+        height: 205px;
+        /* Safari and Chrome */ }
         .projects .projects-wrapper .projects-item .projects-description .inner-box svg {
           width: 100%; }
         .projects .projects-wrapper .projects-item .projects-description .inner-box #large {
           fill: #808080;
           -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-          -webkit-animation: rotate 8s linear infinite;
-          animation: rotate 8s linear infinite; }
+          -webkit-animation: rotating 8s linear infinite;
+          animation: rotating 8s linear infinite; }
         .projects .projects-wrapper .projects-item .projects-description .inner-box #medium {
           fill: #808080;
           -webkit-transform-origin: 50% 52%;
           transform-origin: 50% 52%;
-          -webkit-animation: rotate 6s linear infinite reverse;
-          animation: rotate 6s linear infinite reverse; }
+          -webkit-animation: rotating 6s linear infinite reverse;
+          animation: rotating 6s linear infinite reverse; }
         .projects .projects-wrapper .projects-item .projects-description .inner-box #small {
           /*margin: 20px;*/
           fill: #808080;
           -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-          -webkit-animation: rotate 4s linear infinite reverse;
-          animation: rotate 4s linear infinite reverse; }
-@-webkit-keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+          -webkit-animation: rotating 4s linear infinite reverse;
+          animation: rotating 4s linear infinite reverse; }
     .projects .projects-wrapper .projects-item .projects_list {
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -1064,22 +1062,24 @@ html, body {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: grey;
-          opacity: 0;
-          transition: opacity 0.20s, -webkit-transform 0.20s;
-          transition: opacity 0.20s, transform 0.20s;
-          transition: opacity 0.20s, transform 0.20s, -webkit-transform 0.20s; }
+          background-color: #aaa;
+          opacity: 1;
+          transition: opacity 0.30s, -webkit-transform 0.30s;
+          -webkit-transition: opacity 0.30s, -webkit-transform 0.30s;
+          transition: opacity 0.30s, transform 0.30s;
+          transition: opacity 0.30s, transform 0.30s, -webkit-transform 0.30s; }
           .projects .projects-wrapper .projects-item .projects_list .project .project-caption h2 {
             width: 100%;
             position: absolute;
-            top: 65%;
+            top: 40%;
             text-align: center;
-            color: #fff;
+            color: #000;
             text-transform: uppercase;
             font-size: 1.4em;
             font-weight: 100;
             letter-spacing: 1.5px;
             transition: top 0.20s, -webkit-transform 0.20s;
+            -webkit-transition: top 0.20s, -webkit-transform 0.20s;
             transition: top 0.20s, transform 0.20s;
             transition: top 0.20s, transform 0.20s, -webkit-transform 0.20s; }
             .projects .projects-wrapper .projects-item .projects_list .project .project-caption h2 span {
@@ -1093,6 +1093,7 @@ html, body {
             height: 100%;
             opacity: 0; }
         .projects .projects-wrapper .projects-item .projects_list .project:hover {
+          -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
           .projects .projects-wrapper .projects-item .projects_list .project:hover .project-caption {
             opacity: .8;
@@ -1130,7 +1131,9 @@ html, body {
         animation: slideInRight 1.6s ease-in-out forwards, fadeIn 1.5s ease-in; }
       .projects .projects-wrapper .projects-item .projects_list .project {
         height: auto;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         /*border: 1px solid red;*/ }
         @media screen and (min-width: 767px) {
