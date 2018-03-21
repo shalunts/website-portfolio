@@ -749,7 +749,21 @@ html, body {
 /* *      Section SVG start*/
 /* -------------------------------*/
 .svg-picture {
-  width: 100%; }
+  width: 100%;
+
+  display: -webkit-box !important;
+
+  display: -ms-flexbox !important;
+
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+
+  }
   @media screen and (max-width: 769px) {
     .svg-picture .container {
       margin: 0;
@@ -945,7 +959,21 @@ html, body {
 .projects {
   background-color: #2d2d2d;
   padding-top: 50px;
-  width: 100%; }
+  width: 100%;
+
+  display: -webkit-box !important;
+
+  display: -ms-flexbox !important;
+
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+
+  }
   @media screen and (min-width: 1365px) {
     .projects {
       height: 100vh; } }
