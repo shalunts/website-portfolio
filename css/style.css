@@ -956,7 +956,7 @@ html, body {
     @media screen and (min-width: 767px) {
       .projects .container {
         padding-right: 15px; } }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1365px) {
     .projects .projects-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1261,5 +1261,3 @@ html, body {
 /* -------------------------------*/
 /* *      Section Footer end*/
 /* -------------------------------*/
-
-/*# sourceMappingURL=style.css.map */
