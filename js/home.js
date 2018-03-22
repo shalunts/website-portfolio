@@ -6,7 +6,8 @@ $(document).ready(function(){
       svg = $("#svg"),
       photography = $("#photography"),
       projects = $("#projects"),
-      footer = $("#footer");
+      footer = $("#footer"),
+      whatIDo = $('#what-i-do');
 
   profile.css("display", "none");
   skills.css("display", "none");
@@ -21,11 +22,12 @@ $(document).ready(function(){
 
     profile.css("display", "block");
     skills.css("display", "block");
-    svg.css("display", "block");
+    svg.css("display", "flex");
     photography.css("display", "flex");
-    projects.css("display", "block");
+    projects.css("display", "flex");
     footer.css("display", "flex");
-    intro.css("display", "none");
+    intro.css("display", "none"),
+    whatIDo.css("display", "flex");
 
 
 

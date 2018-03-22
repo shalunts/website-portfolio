@@ -749,7 +749,11 @@ html, body {
 /* *      Section SVG start*/
 /* -------------------------------*/
 .svg-picture {
-  width: 100%; }
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;  
+}
   @media screen and (max-width: 769px) {
     .svg-picture .container {
       margin: 0;
@@ -943,9 +947,14 @@ html, body {
 /* *      Section Projects start*/
 /* -------------------------------*/
 .projects {
+
   background-color: #2d2d2d;
   padding-top: 50px;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
   @media screen and (min-width: 1365px) {
     .projects {
       height: 100vh; } }
